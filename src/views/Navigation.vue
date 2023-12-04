@@ -16,20 +16,140 @@ export default {
 
   data() {
     return {
-      list: [       
+      list: [
         {
           id: 1,
-          img: "/images/nav/3DTiles/3DTilesPick.jpg",
+          img: "/images/nav/3DTiles/3DTiles_Pick.jpg",
           text: "3DTiles拾取",
           path: "/",
         },
-      ]
+                {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Mark.jpg",
+          text: "BIM标记",
+          path: "/BIM_Mark",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_3dtilesMeasure.jpg",
+          text: "BIM测量",
+          path: "/BIM_3dtilesMeasure",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_ComponentDirectoryTree.jpg",
+          text: "构件目录树",
+          path: "/BIM_ComponentDirectoryTree",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Annotation.jpg",
+          text: "BIM标注",
+          path: "/BIM_Annotation",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_DataLoading.jpg",
+          text: "BIM气泡框",
+          path: "/BIM_DataLoading",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_WidgetInfo.jpg",
+          text: "构件信息",
+          path: "/BIM_WidgetInfo",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_KeyboardRoaming.jpg",
+          text: "键盘控制地图场景漫游",
+          path: "/BIM_KeyboardRoaming",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_2DLink3D.jpg",
+          text: "二三维联动",
+          path: "/BIM_2DLink3D",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_PrintScreen.jpg",
+          text: "打印（截图）",
+          path: "/BIM_PrintScreen",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_SplitScreenAnalysis.jpg",
+          text: "构件状态同步",
+          path: "/BIM_SplitScreenAnalysis",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Navigation.jpg",
+          text: "导航操作",
+          path: "/BIM_Navigation",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_ModelAttributes.jpg",
+          text: "模型属性",
+          path: "/BIM_ModelAttributes",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_BoundingBox.jpg",
+          text: "包围盒",
+          path: "/BIM_BoundingBox",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Coordinate.jpg",
+          text: "模型坐标",
+          path: "/BIM_Coordinate",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_addBackground.jpg",
+          text: "背景与天空盒",
+          path: "/BIM_addBackground",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Camera.jpg",
+          text: "模型相机",
+          path: "/BIM_Camera",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_View.jpg",
+          text: "视图操作",
+          path: "/BIM_View",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Color.jpg",
+          text: "模型颜色设置",
+          path: "/BIM_Color",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Show.jpg",
+          text: "构建选择操作",
+          path: "/BIM_Show",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Pick.jpg",
+          text: "构建选择操作",
+          path: "/BIM_Pick",
+        },
+      ],
     };
   },
 
   computed: {},
 
-  mounted() { },
+  mounted() {},
 
   methods: {
     //鼠标滚轮上下滑动时div左右滑动
@@ -39,8 +159,8 @@ export default {
       // console.log($scrollWrapper.scrollLeft)
       // 0到scrollLeft为滚动区域隐藏部分
       $scrollWrapper.scrollLeft = $scrollWrapper.scrollLeft + eventDelta / 4;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="less" scoped>
@@ -60,9 +180,11 @@ export default {
     border: 1px solid #759dc0;
     padding: 2px 4px 4px 4px;
     background-color: #bcd8f4;
-    background-image: linear-gradient(#ffffff 0px,
-        rgba(255, 255, 255, 0) 3px,
-        rgba(255, 255, 255, 0.75) 100%);
+    background-image: linear-gradient(
+      #ffffff 0px,
+      rgba(255, 255, 255, 0) 3px,
+      rgba(255, 255, 255, 0.75) 100%
+    );
     box-sizing: content-box;
     border-radius: 4px;
     cursor: pointer;
