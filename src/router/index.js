@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/gltf_Matrix",
+    name: "gltf_Matrix",
+    component: () => import("../components/gltf/gltf_Matrix.vue")
+  },
+  {
     path: "/BIM_Mark",
     name: "BIM_Mark",
     component: () => import("../components/BIM/BIM_Mark.vue")

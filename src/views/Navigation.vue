@@ -23,7 +23,13 @@ export default {
           text: "3DTiles拾取",
           path: "/",
         },
-                {
+        {
+          id: 1,
+          img: "/images/nav/gltf/gltf_Matrix.jpg",
+          text: "gltf矩阵",
+          path: "/gltf_Matrix",
+        },
+        {
           id: 1,
           img: "/images/nav/BIM/BIM_Mark.jpg",
           text: "BIM标记",
