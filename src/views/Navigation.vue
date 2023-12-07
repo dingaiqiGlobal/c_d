@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Pick.jpg",
+          text: "3DTiles高度调整",
+          path: "/3DTilesAdjustHeight",
+        },
+        {
+          id: 1,
           img: "/images/nav/gltf/gltf_Matrix.jpg",
           text: "gltf矩阵",
           path: "/gltf_Matrix",

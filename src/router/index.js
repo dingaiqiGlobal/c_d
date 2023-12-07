@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/3DTilesAdjustHeight",
+    name: "3DTilesAdjustHeight",
+    component: () => import("../components/3DTiles/3DTilesAdjustHeight.vue")
+  },
+  {
     path: "/gltf_Matrix",
     name: "gltf_Matrix",
     component: () => import("../components/gltf/gltf_Matrix.vue")
