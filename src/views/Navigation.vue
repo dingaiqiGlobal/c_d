@@ -25,9 +25,15 @@ export default {
         },
         {
           id: 1,
-          img: "/images/nav/3DTiles/3DTiles_Pick.jpg",
+          img: "/images/nav/3DTiles/3DTiles_Matrix_root.jpg",
+          text: "3DTiles矩阵变换",
+          path: "/3DTiles_Matrix_root",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_AdjustHeight.jpg",
           text: "3DTiles高度调整",
-          path: "/3DTilesAdjustHeight",
+          path: "/3DTiles_AdjustHeight",
         },
         {
           id: 1,
