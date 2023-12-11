@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/3DTiles_Matrix_modelMatrix",
+    name: "3DTiles_Matrix_modelMatrix",
+    component: () => import("../components/3DTiles/3DTiles_Matrix_modelMatrix.vue")
+  },
+  {
     path: "/3DTiles_Matrix_root",
     name: "3DTiles_Matrix_root",
     component: () => import("../components/3DTiles/3DTiles_Matrix_root.vue")

@@ -23,10 +23,16 @@ export default {
           text: "3DTiles拾取",
           path: "/",
         },
+                {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Matrix_modelMatrix.jpg",
+          text: "3DTiles矩阵modelMatrix",
+          path: "/3DTiles_Matrix_modelMatrix",
+        },
         {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_Matrix_root.jpg",
-          text: "3DTiles矩阵变换",
+          text: "3DTiles矩阵root",
           path: "/3DTiles_Matrix_root",
         },
         {

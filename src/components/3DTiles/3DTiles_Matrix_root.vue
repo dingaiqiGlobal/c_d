@@ -15,7 +15,6 @@ export default {
 
   data() {
     return {
-      heightValue: 0,
       viewer: null,
       tileset: null,
 
@@ -118,7 +117,7 @@ export default {
       //平移旋转矩阵Matrix4
       let position = Cesium.Cartesian3.fromDegrees(this.params.tx, this.params.ty, this.params.tz);
       let m = Cesium.Transforms.eastNorthUpToFixedFrame(position);
-      //缩放
+      //缩放平移矩阵相乘
       let scale = Cesium.Matrix4.fromUniformScale(this.params.scale);
       Cesium.Matrix4.multiply(m, scale, m);
       //旋转、平移矩阵相乘
