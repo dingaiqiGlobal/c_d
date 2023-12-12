@@ -61,6 +61,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/BIM/BIM_Mark_Billboard.jpg",
+          text: "BIM标记Billboard",
+          path: "/BIM_Mark_Billboard",
+        },
+        {
+          id: 1,
           img: "/images/nav/BIM/BIM_3dtilesMeasure.jpg",
           text: "BIM测量",
           path: "/BIM_3dtilesMeasure",

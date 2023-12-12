@@ -40,6 +40,11 @@ const routes = [
     component: () => import("../components/BIM/BIM_Mark.vue")
   },
   {
+    path: "/BIM_Mark_Billboard",
+    name: "BIM_Mark_Billboard",
+    component: () => import("../components/BIM/BIM_Mark_Billboard.vue")
+  },
+  {
     path: "/BIM_3dtilesMeasure",
     name: "BIM_3dtilesMeasure",
     component: () => import("../components/BIM/BIM_3dtilesMeasure.vue")
