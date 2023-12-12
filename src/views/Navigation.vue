@@ -23,7 +23,13 @@ export default {
           text: "3DTiles拾取",
           path: "/",
         },
-                {
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/entity_billboards.jpg",
+          text: "entity_billboards集合",
+          path: "/entity_billboards",
+        },
+        {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_Matrix_modelMatrix.jpg",
           text: "3DTiles矩阵modelMatrix",
