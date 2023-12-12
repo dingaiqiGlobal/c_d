@@ -25,9 +25,9 @@ export default {
         },
         {
           id: 1,
-          img: "/images/nav/3DTiles/entity_billboards.jpg",
-          text: "entity_billboards集合",
-          path: "/entity_billboards",
+          img: "/images/nav/entity/entity_Billboards.jpg",
+          text: "entity_Billboards集合",
+          path: "/entity_Billboards",
         },
         {
           id: 1,

@@ -10,9 +10,9 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
-    path: "/entity_billboards",
-    name: "entity_billboards",
-    component: () => import("../components/entity/entity_billboards.vue")
+    path: "/entity_Billboards",
+    name: "entity_Billboards",
+    component: () => import("../components/entity/entity_Billboards.vue")
   },
   {
     path: "/3DTiles_Matrix_modelMatrix",
