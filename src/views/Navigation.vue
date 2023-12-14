@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/OGC/WMS_GetFeatureInfo.jpg",
+          text: "WMS_GetFeatureInfo",
+          path: "/WMS_GetFeatureInfo",
+        },
+        {
+          id: 1,
           img: "/images/nav/OGC/OGC.jpg",
           text: "OGC集合",
           path: "/OGC",

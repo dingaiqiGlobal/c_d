@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/WMS_GetFeatureInfo",
+    name: "WMS_GetFeatureInfo",
+    component: () => import("../components/OGC/WMS_GetFeatureInfo.vue")
+  },
+  {
     path: "/OGC",
     name: "OGC",
     component: () => import("../components/OGC/OGC.vue")
