@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/OGC",
+    name: "OGC",
+    component: () => import("../components/OGC/OGC.vue")
+  },
+  {
     path: "/entity_Billboards",
     name: "entity_Billboards",
     component: () => import("../components/entity/entity_Billboards.vue")

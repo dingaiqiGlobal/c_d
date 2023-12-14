@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/OGC/OGC.jpg",
+          text: "OGC集合",
+          path: "/OGC",
+        },
+        {
+          id: 1,
           img: "/images/nav/entity/entity_Billboards.jpg",
           text: "entity_Billboards集合",
           path: "/entity_Billboards",
