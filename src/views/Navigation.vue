@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/clock/clock_TrackPlay_FirstView.jpg",
+          text: "轨迹回放（漫游）",
+          path: "/clock_TrackPlay_FirstView",
+        },
+        {
+          id: 1,
           img: "/images/nav/OGC/WMS_GetFeatureInfo.jpg",
           text: "WMS_GetFeatureInfo",
           path: "/WMS_GetFeatureInfo",
