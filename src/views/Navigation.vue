@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/clock/clock_Keyboard_Roaming.jpg",
+          text: "键盘漫游",
+          path: "/clock_Keyboard_Roaming",
+        },
+        {
+          id: 1,
           img: "/images/nav/clock/clock_TrackPlay_FirstView.jpg",
           text: "轨迹回放（漫游）",
           path: "/clock_TrackPlay_FirstView",

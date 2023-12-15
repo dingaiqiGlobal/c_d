@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/clock_Keyboard_Roaming",
+    name: "clock_Keyboard_Roaming",
+    component: () => import("../components/clock/clock_Keyboard_Roaming.vue")
+  },
+  {
     path: "/clock_TrackPlay_FirstView",
     name: "clock_TrackPlay_FirstView",
     component: () => import("../components/clock/clock_TrackPlay_FirstView.vue")
