@@ -183,7 +183,7 @@ export default {
           this.viewer.clock.currentTime,
           new Cesium.Matrix4()
         );
-        let transformX = 2; //距离运动点的距离（后方）
+        let transformX = 4; //距离运动点的距离（后方）
         let transformZ = 0.4; //距离运动点的高度（上方）
         let transformY = 0; //距离运动点的高度（侧方）
         this.viewer.camera.lookAtTransform(
