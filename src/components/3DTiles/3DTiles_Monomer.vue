@@ -51,7 +51,8 @@ export default {
     // this.viewer.scene.globe.show = false;
     // this.viewer.scene.skyAtmosphere.show = false;
 
-    this.tileset = this.viewer.scene.primitives.add(
+    let scene = this.viewer.scene;
+    this.tileset =scene.primitives.add(
       new Cesium.Cesium3DTileset({
         url: "data/3dtiles/bim/tileset.json",
       })

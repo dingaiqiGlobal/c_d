@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Monomer.jpg",
+          text: "3DTiles单体化",
+          path: "/3DTiles_Monomer",
+        },
+        {
+          id: 1,
           img: "/images/nav/clock/clock_Keyboard_Roaming.jpg",
           text: "键盘漫游",
           path: "/clock_Keyboard_Roaming",
