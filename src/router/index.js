@@ -121,6 +121,11 @@ const routes = [
     component: () => import("../components/gltf/gltf_Matrix.vue")
   },
   {
+    path: "/other_Map",
+    name: "other_Map",
+    component: () => import("../components/other/other_Map.vue")
+  },
+  {
     path: "/other_ViewportQuad_Logo",
     name: "other_ViewportQuad_Logo",
     component: () => import("../components/other/other_ViewportQuad_Logo.vue")

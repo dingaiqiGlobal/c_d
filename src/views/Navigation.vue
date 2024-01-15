@@ -149,6 +149,12 @@ export default {
           text: "gltf样式",
           path: "/gltf_Style",
         },
+                {
+          id: 1,
+          img: "/images/nav/other/other_Map.jpg",
+          text: "底图集合",
+          path: "/other_Map",
+        },
         {
           id: 1,
           img: "/images/nav/other/other_ViewportQuad_Logo.jpg",
