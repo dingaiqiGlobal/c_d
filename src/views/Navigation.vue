@@ -37,6 +37,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Inspector.jpg",
+          text: "3DTiles检查",
+          path: "/3DTiles_Inspector",
+        },
+        {
+          id: 1,
           img: "/images/nav/3DTiles/3DTiles_Event_Interactivity.jpg",
           text: "3DTiles事件交互",
           path: "/3DTiles_Event_Interactivity",

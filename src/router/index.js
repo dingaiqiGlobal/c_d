@@ -21,6 +21,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/3DTiles_Inspector",
+    name: "3DTiles_Inspector",
+    component: () => import("../components/3DTiles/3DTiles_Inspector.vue")
+  },
+  {
     path: "/3DTiles_Event_Interactivity",
     name: "3DTiles_Event_Interactivity",
     component: () => import("../components/3DTiles/3DTiles_Event_Interactivity.vue")
