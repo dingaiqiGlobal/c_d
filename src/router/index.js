@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: "/3DTiles_Monomer",
-    name: "3DTiles_Monomerg",
+    name: "3DTiles_Monomer",
     component: () => import("../components/3DTiles/3DTiles_Monomer.vue")
   },
   {
