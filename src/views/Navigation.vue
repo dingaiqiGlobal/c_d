@@ -37,6 +37,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Format.jpg",
+          text: "3DTiles多种加载",
+          path: "/3DTiles_Format",
+        },
+        {
+          id: 1,
           img: "/images/nav/3DTiles/3DTiles_Inspector.jpg",
           text: "3DTiles检查",
           path: "/3DTiles_Inspector",
