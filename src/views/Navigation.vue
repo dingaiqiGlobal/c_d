@@ -151,9 +151,15 @@ export default {
         },
         {
           id: 1,
-          img: "/images/nav/gltf/gltf_Matrix.jpg",
-          text: "gltf矩阵",
-          path: "/gltf_Matrix",
+          img: "/images/nav/other/other_ViewportQuad_Logo.jpg",
+          text: "视口logo",
+          path: "/other_ViewportQuad_Logo",
+        },
+        {
+          id: 1,
+          img: "/images/nav/BIM/BIM_Mark.jpg",
+          text: "BIM标记",
+          path: "/BIM_Mark",
         },
         {
           id: 1,
