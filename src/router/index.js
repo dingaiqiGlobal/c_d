@@ -36,6 +36,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Event_Interactivity.vue")
   },
   {
+    path: "/3DTiles_Style_Building",
+    name: "3DTiles_Style_Building",
+    component: () => import("../components/3DTiles/3DTiles_Style_Building.vue")
+  },
+  {
     path: "/3DTiles_Style_PointCloud",
     name: "3DTiles_Style_PointCloud",
     component: () => import("../components/3DTiles/3DTiles_Style_PointCloud.vue")
