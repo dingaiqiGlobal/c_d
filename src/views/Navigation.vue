@@ -61,6 +61,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Style_BatchTable.jpg",
+          text: "3DTilesBatch样式",
+          path: "/3DTiles_Style_BatchTable",
+        },
+        {
+          id: 1,
           img: "/images/nav/3DTiles/3DTiles_Style_Building.jpg",
           text: "3DTiles建筑样式",
           path: "/3DTiles_Style_Building",

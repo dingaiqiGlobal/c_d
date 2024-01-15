@@ -41,6 +41,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Event_Interactivity.vue")
   },
   {
+    path: "/3DTiles_Style_BatchTable",
+    name: "3DTiles_Style_BatchTable",
+    component: () => import("../components/3DTiles/3DTiles_Style_BatchTable.vue")
+  },
+  {
     path: "/3DTiles_Style_Building",
     name: "3DTiles_Style_Building",
     component: () => import("../components/3DTiles/3DTiles_Style_Building.vue")
