@@ -71,14 +71,19 @@ const routes = [
     component: () => import("../components/clock/clock_TrackPlay_FirstView.vue")
   },
   {
+    path: "/OGC_Terrain",
+    name: "OGC_Terrain",
+    component: () => import("../components/OGC/OGC_Terrain.vue")
+  },
+  {
     path: "/WMS_GetFeatureInfo",
     name: "WMS_GetFeatureInfo",
     component: () => import("../components/OGC/WMS_GetFeatureInfo.vue")
   },
   {
-    path: "/OGC",
-    name: "OGC",
-    component: () => import("../components/OGC/OGC.vue")
+    path: "/OGC_Type",
+    name: "OGC_Type",
+    component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
     path: "/entity_Type_Collection",

@@ -97,15 +97,21 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/OGC/OGC_Terrain.jpg",
+          text: "OGC_Terrain",
+          path: "/OGC_Terrain",
+        },
+        {
+          id: 1,
           img: "/images/nav/OGC/WMS_GetFeatureInfo.jpg",
           text: "WMS_GetFeatureInfo",
           path: "/WMS_GetFeatureInfo",
         },
         {
           id: 1,
-          img: "/images/nav/OGC/OGC.jpg",
+          img: "/images/nav/OGC/OGC_Type.jpg",
           text: "OGC集合",
-          path: "/OGC",
+          path: "/OGC_Type",
         },
         {
           id: 1,
