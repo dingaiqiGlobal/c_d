@@ -81,6 +81,11 @@ const routes = [
     component: () => import("../components/OGC/OGC.vue")
   },
   {
+    path: "/entity_Type_Collection",
+    name: "entity_Type_Collection",
+    component: () => import("../components/entity/entity_Type_Collection.vue")
+  },
+  {
     path: "/entity_Billboards",
     name: "entity_Billboards",
     component: () => import("../components/entity/entity_Billboards.vue")

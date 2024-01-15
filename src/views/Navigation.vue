@@ -109,8 +109,14 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/entity/entity_Type_Collection.jpg",
+          text: "entity类型集合",
+          path: "/entity_Type_Collection",
+        },
+        {
+          id: 1,
           img: "/images/nav/entity/entity_Billboards.jpg",
-          text: "entity_Billboards集合",
+          text: "entity_Billboards",
           path: "/entity_Billboards",
         },
         {
@@ -131,7 +137,7 @@ export default {
           text: "3DTiles高度调整",
           path: "/3DTiles_AdjustHeight",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/gltf/gltf_Style.jpg",
           text: "gltf样式",
