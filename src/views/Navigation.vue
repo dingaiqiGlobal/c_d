@@ -131,6 +131,12 @@ export default {
           text: "3DTiles高度调整",
           path: "/3DTiles_AdjustHeight",
         },
+                {
+          id: 1,
+          img: "/images/nav/gltf/gltf_Style.jpg",
+          text: "gltf样式",
+          path: "/gltf_Style",
+        },
         {
           id: 1,
           img: "/images/nav/gltf/gltf_Matrix.jpg",

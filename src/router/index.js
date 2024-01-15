@@ -101,6 +101,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_AdjustHeight.vue")
   },
   {
+    path: "/gltf_Style",
+    name: "gltf_Style",
+    component: () => import("../components/gltf/gltf_Style.vue")
+  },
+  {
     path: "/gltf_Matrix",
     name: "gltf_Matrix",
     component: () => import("../components/gltf/gltf_Matrix.vue")
