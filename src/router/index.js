@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/postProcessing_Stroke",
+    name: "postProcessing_Stroke",
+    component: () => import("../components/postProcessing/postProcessing_Stroke.vue")
+  },
+  {
     path: "/postProcessing_Bloom",
     name: "postProcessing_Bloom",
     component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
