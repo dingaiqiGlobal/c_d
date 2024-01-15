@@ -37,6 +37,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_ClippingPlanes.jpg",
+          text: "3DTiles剪裁平面",
+          path: "/3DTiles_ClippingPlanes",
+        },
+        {
+          id: 1,
           img: "/images/nav/3DTiles/3DTiles_Format.jpg",
           text: "3DTiles多种加载",
           path: "/3DTiles_Format",
@@ -53,7 +59,7 @@ export default {
           text: "3DTiles事件交互",
           path: "/3DTiles_Event_Interactivity",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_Style_Building.jpg",
           text: "3DTiles建筑样式",
