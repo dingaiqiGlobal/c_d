@@ -35,7 +35,13 @@ export default {
           text: "3DTiles拾取",
           path: "/",
         },
-                {
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Event_Interactivity.jpg",
+          text: "3DTiles事件交互",
+          path: "/3DTiles_Event_Interactivity",
+        },
+        {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_Style_PointCloud.jpg",
           text: "3DTiles样式点云",
