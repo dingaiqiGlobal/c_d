@@ -23,6 +23,12 @@ export default {
           text: "3DTiles拾取",
           path: "/",
         },
+                {
+          id: 1,
+          img: "/images/nav/postProcesing/postProcessing_Bloom.jpg",
+          text: "后期泛光",
+          path: "/postProcessing_Bloom",
+        },
         {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_Monomer.jpg",

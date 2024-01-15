@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
   },
   {
+    path: "/postProcessing_Bloom",
+    name: "postProcessing_Bloom",
+    component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
+  },
+  {
     path: "/3DTiles_Monomer",
     name: "3DTiles_Monomer",
     component: () => import("../components/3DTiles/3DTiles_Monomer.vue")
