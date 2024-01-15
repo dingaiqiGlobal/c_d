@@ -4,11 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: '3DTiles_Pick',
-    component: () => import("../components/3DTiles/3DTiles_Pick.vue")
-  },
+
   {
     path: "/postProcessing_Stroke",
     name: "postProcessing_Stroke",
@@ -18,6 +14,16 @@ const routes = [
     path: "/postProcessing_Bloom",
     name: "postProcessing_Bloom",
     component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
+  },
+  {
+    path: '/',
+    name: '3DTiles_Pick',
+    component: () => import("../components/3DTiles/3DTiles_Pick.vue")
+  },
+  {
+    path: "/3DTiles_Style_PointCloud",
+    name: "3DTiles_Style_PointCloud",
+    component: () => import("../components/3DTiles/3DTiles_Style_PointCloud.vue")
   },
   {
     path: "/3DTiles_Monomer",

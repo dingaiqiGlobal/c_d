@@ -19,12 +19,6 @@ export default {
       list: [
         {
           id: 1,
-          img: "/images/nav/3DTiles/3DTiles_Pick.jpg",
-          text: "3DTiles拾取",
-          path: "/",
-        },
-        {
-          id: 1,
           img: "/images/nav/postProcessing/postProcessing_Stroke.jpg",
           text: "后期描边",
           path: "/postProcessing_Stroke",
@@ -34,6 +28,18 @@ export default {
           img: "/images/nav/postProcessing/postProcessing_Bloom.jpg",
           text: "后期泛光",
           path: "/postProcessing_Bloom",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Pick.jpg",
+          text: "3DTiles拾取",
+          path: "/",
+        },
+                {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Style_PointCloud.jpg",
+          text: "3DTiles样式点云",
+          path: "/3DTiles_Style_PointCloud",
         },
         {
           id: 1,
