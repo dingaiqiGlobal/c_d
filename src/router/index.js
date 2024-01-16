@@ -106,6 +106,11 @@ const routes = [
     component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
+    path: "/geojson_Invert",
+    name: "geojson_Invert",
+    component: () => import("../components/geojson/geojson_Invert.vue")
+  },
+  {
     path: "/entity_Type_Collection",
     name: "entity_Type_Collection",
     component: () => import("../components/entity/entity_Type_Collection.vue")
