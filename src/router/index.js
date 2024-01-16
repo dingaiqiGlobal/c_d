@@ -121,6 +121,11 @@ const routes = [
     component: () => import("../components/gltf/gltf_Matrix.vue")
   },
   {
+    path: "/other_FramesPerSecound",
+    name: "other_FramesPerSecound",
+    component: () => import("../components/other/other_FramesPerSecound.vue")
+  },
+  {
     path: "/other_Map",
     name: "other_Map",
     component: () => import("../components/other/other_Map.vue")

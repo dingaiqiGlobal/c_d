@@ -149,7 +149,13 @@ export default {
           text: "gltf样式",
           path: "/gltf_Style",
         },
-                {
+        {
+          id: 1,
+          img: "/images/nav/other/other_FramesPerSecound.jpg",
+          text: "帧率-调优",
+          path: "/other_FramesPerSecound",
+        },
+        {
           id: 1,
           img: "/images/nav/other/other_Map.jpg",
           text: "底图集合",
