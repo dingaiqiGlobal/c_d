@@ -31,6 +31,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/postProcessing/postProcessing_Weather.jpg",
+          text: "后期-天气",
+          path: "/postProcessing_Weather",
+        },
+        {
+          id: 1,
           img: "/images/nav/postProcessing/postProcessing_Stroke.jpg",
           text: "后期描边",
           path: "/postProcessing_Stroke",

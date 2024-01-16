@@ -9,10 +9,16 @@ const routes = [
     name: "property_FlowLine",
     component: () => import("../components/property/property_Polyline/property_FlowLine.vue")
   },
+  
   {
     path: "/project_ModelSplit",
     name: "project_ModelSplit",
     component: () => import("../components/project/project_ModelSplit.vue")
+  },
+  {
+    path: "/postProcessing_Weather",
+    name: "postProcessing_Weather",
+    component: () => import("../components/postProcessing/postProcessing_Weather.vue")
   },
   {
     path: "/postProcessing_Stroke",
