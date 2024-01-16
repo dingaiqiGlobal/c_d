@@ -137,11 +137,17 @@ export default {
           text: "OGC集合",
           path: "/OGC_Type",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/geojson/geojson_Invert.jpg",
           text: "geojson反选",
           path: "/geojson_Invert",
+        },
+        {
+          id: 1,
+          img: "/images/nav/entity/entity_CallbackProperty.jpg",
+          text: "entity_CallbackProperty",
+          path: "/entity_CallbackProperty",
         },
         {
           id: 1,

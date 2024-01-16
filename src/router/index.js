@@ -111,6 +111,11 @@ const routes = [
     component: () => import("../components/geojson/geojson_Invert.vue")
   },
   {
+    path: "/entity_CallbackProperty",
+    name: "entity_CallbackProperty",
+    component: () => import("../components/entity/entity_CallbackProperty.vue")
+  },
+  {
     path: "/entity_Type_Collection",
     name: "entity_Type_Collection",
     component: () => import("../components/entity/entity_Type_Collection.vue")
