@@ -4,7 +4,11 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-
+  {
+    path: "/project_ModelSplit",
+    name: "project_ModelSplit",
+    component: () => import("../components/project/project_ModelSplit.vue")
+  },
   {
     path: "/postProcessing_Stroke",
     name: "postProcessing_Stroke",

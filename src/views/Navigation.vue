@@ -19,6 +19,12 @@ export default {
       list: [
         {
           id: 1,
+          img: "/images/nav/project/project_ModelSplit.jpg",
+          text: "模型拆解",
+          path: "/project_ModelSplit",
+        },
+        {
+          id: 1,
           img: "/images/nav/postProcessing/postProcessing_Stroke.jpg",
           text: "后期描边",
           path: "/postProcessing_Stroke",
