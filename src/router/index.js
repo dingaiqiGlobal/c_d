@@ -76,6 +76,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Monomer.vue")
   },
   {
+    path: "/camera_GlobeRotate",
+    name: "camera_GlobeRotate",
+    component: () => import("../components/camera/camera_GlobeRotate.vue")
+  },
+  {
     path: "/clock_Keyboard_Roaming",
     name: "clock_Keyboard_Roaming",
     component: () => import("../components/clock/clock_Keyboard_Roaming.vue")

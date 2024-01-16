@@ -103,6 +103,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/camera/camera_GlobeRotate.jpg",
+          text: "旋转地球",
+          path: "/camera_GlobeRotate",
+        },
+        {
+          id: 1,
           img: "/images/nav/clock/clock_Keyboard_Roaming.jpg",
           text: "键盘漫游",
           path: "/clock_Keyboard_Roaming",
