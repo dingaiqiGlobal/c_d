@@ -17,6 +17,12 @@ export default {
   data() {
     return {
       list: [
+                {
+          id: 1,
+          img: "/images/nav/property/property_Polyline/property_FlowLine.jpg",
+          text: "流动线",
+          path: "/property_FlowLine",
+        },
         {
           id: 1,
           img: "/images/nav/project/project_ModelSplit.jpg",

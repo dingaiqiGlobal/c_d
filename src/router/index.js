@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/property_FlowLine",
+    name: "property_FlowLine",
+    component: () => import("../components/property/property_Polyline/property_FlowLine.vue")
+  },
+  {
     path: "/project_ModelSplit",
     name: "project_ModelSplit",
     component: () => import("../components/project/project_ModelSplit.vue")
