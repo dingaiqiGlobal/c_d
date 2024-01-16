@@ -5,11 +5,15 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/property_FlickerLine",
+    name: "property_FlickerLine",
+    component: () => import("../components/property/property_Polyline/property_FlickerLine.vue")
+  },
+  {
     path: "/property_FlowLine",
     name: "property_FlowLine",
     component: () => import("../components/property/property_Polyline/property_FlowLine.vue")
   },
-  
   {
     path: "/project_ModelSplit",
     name: "project_ModelSplit",

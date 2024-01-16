@@ -17,6 +17,12 @@ export default {
   data() {
     return {
       list: [
+                {
+          id: 1,
+          img: "/images/nav/property/property_Polyline/property_FlickerLine.jpg",
+          text: "闪烁线",
+          path: "/property_FlickerLine",
+        },
         {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_FlowLine.jpg",
