@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       list: [
-                {
+        {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_FlowLine.jpg",
           text: "流动线",
@@ -178,6 +178,12 @@ export default {
           img: "/images/nav/other/other_ViewportQuad_Logo.jpg",
           text: "视口logo",
           path: "/other_ViewportQuad_Logo",
+        },
+        {
+          id: 1,
+          img: "/images/nav/control/control_HawkEye3DMap.jpg",
+          text: "鹰眼图",
+          path: "/control_HawkEye3DMap",
         },
         {
           id: 1,

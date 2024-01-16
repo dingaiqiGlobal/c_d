@@ -145,6 +145,11 @@ const routes = [
     component: () => import("../components/other/other_ViewportQuad_Logo.vue")
   },
   {
+    path: "/control_HawkEye3DMap",
+    name: "control_HawkEye3DMap",
+    component: () => import("../components/control/control_HawkEye3DMap.vue")
+  },
+  {
     path: "/BIM_Mark",
     name: "BIM_Mark",
     component: () => import("../components/BIM/BIM_Mark.vue")
