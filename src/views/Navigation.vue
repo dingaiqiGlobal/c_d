@@ -17,7 +17,13 @@ export default {
   data() {
     return {
       list: [
-                {
+        {
+          id: 1,
+          img: "/images/nav/property/property_Point/property_PointCollection.jpg",
+          text: "点效果集合",
+          path: "/property_PointCollection",
+        },
+        {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_ParabolaLine.jpg",
           text: "抛物线",
@@ -40,6 +46,12 @@ export default {
           img: "/images/nav/property/property_Polyline/property_FlowLine.jpg",
           text: "流动线",
           path: "/property_FlowLine",
+        },
+        {
+          id: 1,
+          img: "/images/nav/property/property_Polygon/property_Water.jpg",
+          text: "动态水面",
+          path: "/property_Water",
         },
         {
           id: 1,

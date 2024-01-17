@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/property_PointCollection",
+    name: "property_PointCollection",
+    component: () => import("../components/property/property_Point/property_PointCollection.vue")
+  },
+  {
     path: "/property_ParabolaLine",
     name: "property_ParabolaLine",
     component: () => import("../components/property/property_Polyline/property_ParabolaLine.vue")
@@ -23,6 +28,11 @@ const routes = [
     path: "/property_FlowLine",
     name: "property_FlowLine",
     component: () => import("../components/property/property_Polyline/property_FlowLine.vue")
+  },
+  {
+    path: "/property_Water",
+    name: "property_Water",
+    component: () => import("../components/property/property_Polygon/property_Water.vue")
   },
   {
     path: "/project_ModelSplit",
