@@ -19,7 +19,7 @@ export default {
       list: [
         {
           id: 1,
-          img: "/images/nav/property/property_Point/property_PointCollection.jpg",
+          img: "/images/nav/property/property_Polyline/property_ParabolaLine.jpg",
           text: "点效果集合",
           path: "/property_PointCollection",
         },
@@ -166,6 +166,12 @@ export default {
           img: "/images/nav/OGC/OGC_Type.jpg",
           text: "OGC集合",
           path: "/OGC_Type",
+        },
+        {
+          id: 1,
+          img: "/images/nav/geojson/geojson_Water.jpg",
+          text: "geojson水面",
+          path: "/geojson_Water",
         },
         {
           id: 1,
