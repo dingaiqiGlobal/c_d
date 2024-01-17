@@ -17,6 +17,12 @@ export default {
   data() {
     return {
       list: [
+                {
+          id: 1,
+          img: "/images/nav/property/property_Polyline/property_ParabolaLine.jpg",
+          text: "抛物线",
+          path: "/property_ParabolaLine",
+        },
         {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_FlyLine.jpg",
