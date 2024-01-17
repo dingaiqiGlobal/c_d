@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/property_FlyLine",
+    name: "property_FlyLine",
+    component: () => import("../components/property/property_Polyline/property_FlyLine.vue")
+  },
+  {
     path: "/property_FlickerLine",
     name: "property_FlickerLine",
     component: () => import("../components/property/property_Polyline/property_FlickerLine.vue")

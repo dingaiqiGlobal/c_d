@@ -17,7 +17,13 @@ export default {
   data() {
     return {
       list: [
-                {
+        {
+          id: 1,
+          img: "/images/nav/property/property_Polyline/property_FlyLine.jpg",
+          text: "竖直飞线",
+          path: "/property_FlyLine",
+        },
+        {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_FlickerLine.jpg",
           text: "闪烁线",
