@@ -33,12 +33,7 @@ export default {
       infoBox: false,
     });
     this.viewer.camera.setView({
-      destination: Cesium.Cartesian3.fromDegrees(116.83074, 40.3591, 300),
-      orientation: {
-        heading: Cesium.Math.toRadians(0),
-        pitch: Cesium.Math.toRadians(-10),
-        roll: 0,
-      },
+      destination: Cesium.Cartesian3.fromDegrees(116.824740,40.373460, 900),
     });
     this.addWall_Dynamic();
     this.addWall_Trail();
