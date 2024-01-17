@@ -14,7 +14,7 @@ export default {
     components: {},
 
     data() {
-        return {
+        return {    
             viewer: null,
         };
     },
