@@ -30,6 +30,11 @@ const routes = [
     component: () => import("../components/property/property_Polyline/property_FlowLine.vue")
   },
   {
+    path: "/property_WallCollection",
+    name: "property_WallCollection",
+    component: () => import("../components/property/property_Polyline/property_WallCollection.vue")
+  },
+  {
     path: "/property_Water",
     name: "property_Water",
     component: () => import("../components/property/property_Polygon/property_Water.vue")

@@ -49,6 +49,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/property/property_Polyline/property_WallCollection.jpg",
+          text: "墙体集合",
+          path: "/property_WallCollection",
+        },
+        {
+          id: 1,
           img: "/images/nav/property/property_Polygon/property_Water.jpg",
           text: "动态水面",
           path: "/property_Water",
