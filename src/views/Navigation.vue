@@ -89,7 +89,7 @@ export default {
           text: "后期泛光",
           path: "/postProcessing_Bloom",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/3DTiles/3DTiles_BuildingLight.jpg",
           text: "3DTiles建筑物光圈",
@@ -245,7 +245,13 @@ export default {
           text: "entity_Billboards",
           path: "/entity_Billboards",
         },
-                {
+        {
+          id: 1,
+          img: "/images/nav/gltf/gltf_hpr.jpg",
+          text: "gltf_HPR",
+          path: "/gltf_hpr",
+        },
+        {
           id: 1,
           img: "/images/nav/gltf/gltf_CallbackProperty_Move.jpg",
           text: "gltf移动Property",

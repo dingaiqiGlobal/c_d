@@ -195,6 +195,11 @@ const routes = [
     component: () => import("../components/entity/entity_Billboards.vue")
   },
   {
+    path: "/gltf_hpr",
+    name: "gltf_hpr",
+    component: () => import("../components/gltf/gltf_hpr.vue")
+  },
+  {
     path: "/gltf_CallbackProperty_Move",
     name: "gltf_CallbackProperty_Move",
     component: () => import("../components/gltf/gltf_CallbackProperty_Move.vue")
