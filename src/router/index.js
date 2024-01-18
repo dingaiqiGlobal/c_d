@@ -5,9 +5,14 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/property_PointCollection",
-    name: "property_PointCollection",
-    component: () => import("../components/property/property_Point/property_PointCollection.vue")
+    path: "/property_PointCollection_two",
+    name: "property_PointCollection_two",
+    component: () => import("../components/property/property_Point/property_PointCollection_two.vue")
+  },
+  {
+    path: "/property_PointCollection_one",
+    name: "property_PointCollection_one",
+    component: () => import("../components/property/property_Point/property_PointCollection_one.vue")
   },
   {
     path: "/property_ParabolaLine",

@@ -17,11 +17,17 @@ export default {
   data() {
     return {
       list: [
+                {
+          id: 1,
+          img: "/images/nav/property/property_Point/property_PointCollection_one.jpg",
+          text: "点效果集合",
+          path: "/property_PointCollection_two",
+        },
         {
           id: 1,
-          img: "/images/nav/property/property_Polyline/property_ParabolaLine.jpg",
+          img: "/images/nav/property/property_Point/property_PointCollection_one.jpg",
           text: "点效果集合",
-          path: "/property_PointCollection",
+          path: "/property_PointCollection_one",
         },
         {
           id: 1,

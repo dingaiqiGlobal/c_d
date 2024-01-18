@@ -37,13 +37,9 @@ export default {
       infoBox: false,
     });
     this.viewer.camera.setView({
-      destination: Cesium.Cartesian3.fromDegrees(116.83737, 40.37454, 3000.0),
-      orientation: {
-        heading: Cesium.Math.toRadians(0),
-        pitch: Cesium.Math.toRadians(-90),
-        roll: 0,
-      },
+      destination: Cesium.Cartesian3.fromDegrees(116.832430,40.370910, 3000.0),
     });
+    this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
 
     this.addPoint_HexagonSpread();
     this.addPoint_CallbackProperty_Rotate();
