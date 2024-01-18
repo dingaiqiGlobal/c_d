@@ -12,7 +12,11 @@ import { HexagonSpread } from "../../utils/property/property_Point/HexagonSpread
 import { CircleScanMaterialProperty } from "../../utils/property/property_Point/CircleScanMaterialProperty";
 import { CircleRippleMaterialProperty } from "../../utils/property/property_Point/CircleRippleMaterialProperty";
 import { CircleDiffuseMaterilaProperty } from "../../utils/property/property_Point/CircleDiffuseMaterilaProperty";
-
+import { CircleFadeMaterialProperty } from "../../utils/property/property_Point/CircleFadeMaterialProperty";
+import { CircleBlurMaterialProperty } from "../../utils/property/property_Point/CircleBlurMaterialProperty";
+import { CircleSpiralMaterialProperty } from "../../utils/property/property_Point/CircleSpiralMaterialProperty";
+import { CircleColorfulMaterialProperty } from "../../utils/property/property_Point/CircleColorfulMaterialProperty";
+import { CirclePulseMaterialProperty } from "../../utils/property/property_Point/CirclePulseMaterialProperty";
 // import {  } from "../../utils/property/property_Point/";
 
 export default {
@@ -46,6 +50,11 @@ export default {
     this.addPoint_CircleScan();
     this.addPoint_CircleRipple();
     this.addPoint_CircleDiffuse();
+    this.addPoint_CircleFade();
+    this.addPoint_CircleBlur();
+    this.addPoint_CricleSpiral();
+    this.addPoint_CricleColor();
+    this.addPoint_CirclePulse();
   },
 
   methods: {
@@ -122,6 +131,81 @@ export default {
           material: new Cesium.CircleDiffuseMaterialProperty({
             color: new Cesium.Color(1, 0.2, 0, 0.7),
             speed: 12.0,
+          }),
+        },
+      });
+    },
+    //消隐圆
+    addPoint_CircleFade() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.826, 40.371),
+        name: "消隐圆",
+        ellipse: {
+          semiMinorAxis: 100.0,
+          semiMajorAxis: 100.0,
+          material: new Cesium.CircleFadeMaterialProperty({
+            color: new Cesium.Color(1, 0.3, 0, 0.2),
+            speed: 12.0,
+          }),
+        },
+      });
+    },
+    //模糊圆
+    addPoint_CircleBlur() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.829, 40.371),
+        name: "模糊圆",
+        ellipse: {
+          semiMinorAxis: 100.0,
+          semiMajorAxis: 100.0,
+          material: new Cesium.CircleBlurMaterialProperty({
+            color: new Cesium.Color(1, 1, 0, 0.7),
+            speed: 12.0,
+          }),
+        },
+      });
+    },
+    //螺旋圆
+    addPoint_CricleSpiral() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.832, 40.371),
+        name: "螺旋圆",
+        ellipse: {
+          semiMinorAxis: 100.0,
+          semiMajorAxis: 100.0,
+          material: new Cesium.CircleSpiralMaterialProperty({
+            color: new Cesium.Color(0.6, 1, 0, 0.7),
+            speed: 12.0,
+          }),
+        },
+      });
+    },
+    //多彩圆
+    addPoint_CricleColor() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.835, 40.371),
+        name: "多彩圆",
+        ellipse: {
+          semiMinorAxis: 100.0,
+          semiMajorAxis: 100.0,
+          material: new Cesium.CircleColorfulMaterialProperty({
+            color: new Cesium.Color(0.6, 1, 0, 0.7),
+            speed: 12.0,
+          }),
+        },
+      });
+    },
+    //脉冲圆
+    addPoint_CirclePulse() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.838, 40.371),
+        name: "脉冲圆",
+        ellipse: {
+          semiMinorAxis: 100.0,
+          semiMajorAxis: 100.0,
+          material: new Cesium.CirclePulseMaterialProperty({
+            color: new Cesium.Color(0.4, 1, 0, 0.7),
+            speed: 50.0,
           }),
         },
       });
