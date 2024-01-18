@@ -195,6 +195,16 @@ const routes = [
     component: () => import("../components/entity/entity_Billboards.vue")
   },
   {
+    path: "/gltf_View_God",
+    name: "gltf_View_God",
+    component: () => import("../components/gltf/gltf_View_God.vue")
+  },
+  {
+    path: "/gltf_View_First",
+    name: "gltf_View_First",
+    component: () => import("../components/gltf/gltf_View_First.vue")
+  },
+  {
     path: "/gltf_hpr",
     name: "gltf_hpr",
     component: () => import("../components/gltf/gltf_hpr.vue")

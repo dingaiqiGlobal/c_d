@@ -247,6 +247,18 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/gltf/gltf_View_God.jpg",
+          text: "上帝视角跟随",
+          path: "/gltf_View_God",
+        },
+        {
+          id: 1,
+          img: "/images/nav/gltf/gltf_View_First.jpg",
+          text: "第一视角跟随",
+          path: "/gltf_View_First",
+        },
+        {
+          id: 1,
           img: "/images/nav/gltf/gltf_hpr.jpg",
           text: "gltf_HPR",
           path: "/gltf_hpr",
