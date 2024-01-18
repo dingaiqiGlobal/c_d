@@ -27,6 +27,7 @@ export default {
     this.viewer._cesiumWidget._creditContainer.style.display = "none";
     // 开启深度检测(处于地下的东西看不到)
     this.viewer.scene.globe.depthTestAgainstTerrain = true;
+    this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
     // 设置初始视角 位置点
     const initialPosition = Cesium.Cartesian3.fromDegrees(
       -74.01881302800248,
@@ -50,6 +51,7 @@ export default {
       url: Cesium.IonResource.fromAssetId(75343),
     });
     this.viewer.scene.primitives.add(this.tileset);
+
 
     // 设置鼠标悬停3dtiles显示的html标签
     const nameOverlay = document.createElement("div"); // 创建一个div元素

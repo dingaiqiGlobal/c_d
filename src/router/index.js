@@ -50,6 +50,11 @@ const routes = [
     component: () => import("../components/project/project_ModelSplit.vue")
   },
   {
+    path: "/particleSystem_Collection",
+    name: "particleSystem_Collection",
+    component: () => import("../components/particleSystem/particleSystem_Collection.vue")
+  },
+  {
     path: "/postProcessing_Weather",
     name: "postProcessing_Weather",
     component: () => import("../components/postProcessing/postProcessing_Weather.vue")

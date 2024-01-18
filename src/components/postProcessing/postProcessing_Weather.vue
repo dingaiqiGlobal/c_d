@@ -56,6 +56,7 @@ export default {
     this.viewer = new Cesium.Viewer("cesiumContainer", {
       infoBox: false,
     });
+    this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
   },
 
   methods: {

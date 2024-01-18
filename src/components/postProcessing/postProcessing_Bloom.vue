@@ -130,13 +130,14 @@ export default {
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ZjI1YWYwNS00ODJiLTQzOTYtYTA3My0zMzI3ODFiZTdkYzAiLCJpZCI6MjAzOTgsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzczNDAzMjN9.s1TyB5DYncqM_xAF-ekua_P4fcZmmyeVR4hA9ec9G4Q";
     this.viewer = new Cesium.Viewer("cesiumContainer");
     this.viewer._cesiumWidget._creditContainer.style.display = "none";
+    this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
     // 添加小模型
     const numberOfBalloons = 13; // 定义模型的数量值
     const lonIncrement = 0.00025; // 定义模型的经纬增量值
-    const initialLon = -122.99875; 
+    const initialLon = -122.99875;
     const lat = 44.0503706;
-    const height = 100.0; 
-    const url = "data/model/CesiumBalloon.glb"; 
+    const height = 100.0;
+    const url = "data/model/CesiumBalloon.glb";
     for (let i = 0; i < numberOfBalloons; ++i) {
       const lon = initialLon + i * lonIncrement;
       this.createModel(url, lon, lat, height);

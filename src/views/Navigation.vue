@@ -73,6 +73,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/particleSystem/particleSystem_Collection.jpg",
+          text: "粒子系统集合",
+          path: "/particleSystem_Collection",
+        },
+        {
+          id: 1,
           img: "/images/nav/postProcessing/postProcessing_Weather.jpg",
           text: "后期-天气",
           path: "/postProcessing_Weather",
