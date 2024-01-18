@@ -133,6 +133,7 @@ export default {
         minRadius: 50,
       });
     },
+    //CallbackProperty
     addWall_Turf() {
       //数据结构
       //   let Positions = [
