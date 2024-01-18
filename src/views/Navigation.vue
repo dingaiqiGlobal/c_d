@@ -19,7 +19,7 @@ export default {
       list: [
                 {
           id: 1,
-          img: "/images/nav/property/property_Point/property_PointCollection_one.jpg",
+          img: "/images/nav/property/property_Point/property_PointCollection_two.jpg",
           text: "点效果集合",
           path: "/property_PointCollection_two",
         },
