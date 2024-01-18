@@ -211,6 +211,18 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/geojson/geojson_Cluster_Two.jpg",
+          text: "geojson聚散",
+          path: "/geojson_Cluster_Two",
+        },
+        {
+          id: 1,
+          img: "/images/nav/geojson/geojson_Cluster_One.jpg",
+          text: "geojson聚散",
+          path: "/geojson_Cluster_One",
+        },
+        {
+          id: 1,
           img: "/images/nav/geojson/geojson_Water.jpg",
           text: "geojson水面",
           path: "/geojson_Water",

@@ -165,6 +165,16 @@ const routes = [
     component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
+    path: "/geojson_Cluster_Two",
+    name: "geojson_Cluster_Two",
+    component: () => import("../components/geojson/geojson_Cluster_Two.vue")
+  },
+  {
+    path: "/geojson_Cluster_One",
+    name: "geojson_Cluster_One",
+    component: () => import("../components/geojson/geojson_Cluster_One.vue")
+  },
+  {
     path: "/geojson_Water",
     name: "geojson_Water",
     component: () => import("../components/geojson/geojson_Water.vue")
