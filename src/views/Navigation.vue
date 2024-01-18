@@ -245,6 +245,12 @@ export default {
           text: "entity_Billboards",
           path: "/entity_Billboards",
         },
+                {
+          id: 1,
+          img: "/images/nav/gltf/gltf_CallbackProperty_Move.jpg",
+          text: "gltf移动Property",
+          path: "/gltf_CallbackProperty_Move",
+        },
         {
           id: 1,
           img: "/images/nav/gltf/gltf_Style.jpg",
