@@ -12,7 +12,7 @@ import * as Cesium from "cesium/Cesium";
 import "../../utils/property/property_Polyline/property_Wall_Dynamic";
 import "../../utils/property/property_Polyline/property_Wall_Trail";
 import "../../utils/property/property_Polyline/property_Wall_Diffuse";
-import { WallRegularDiffuse } from '../../utils/property/property_Polyline/property_Wall_Zoom'
+import { WallRegularDiffuse } from "../../utils/property/property_Polyline/property_Wall_Zoom";
 import * as turf from "@turf/turf";
 
 export default {
@@ -33,8 +33,9 @@ export default {
       infoBox: false,
     });
     this.viewer.camera.setView({
-      destination: Cesium.Cartesian3.fromDegrees(116.824740,40.373460, 900),
+      destination: Cesium.Cartesian3.fromDegrees(116.82474, 40.37346, 900),
     });
+    this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
     this.addWall_Dynamic();
     this.addWall_Trail();
     this.addWall_Diffuse();
@@ -125,7 +126,7 @@ export default {
     addWall_Zoom() {
       WallRegularDiffuse({
         viewer: this.viewer,
-        center: [116.824150,40.370900],
+        center: [116.82415, 40.3709],
         radius: 100.0,
         edge: 7,
         height: 100.0,
