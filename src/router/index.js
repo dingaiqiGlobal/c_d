@@ -65,6 +65,26 @@ const routes = [
     component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
   },
   {
+    path: "/3Dtiles_ContentNum",
+    name: "3Dtiles_ContentNum",
+    component: () => import("../components/3DTiles/3Dtiles_ContentNum.vue")
+  },
+  {
+    path: "/3DTiles_Matrix_modelMatrix",
+    name: "3DTiles_Matrix_modelMatrix",
+    component: () => import("../components/3DTiles/3DTiles_Matrix_modelMatrix.vue")
+  },
+  {
+    path: "/3DTiles_Matrix_root",
+    name: "3DTiles_Matrix_root",
+    component: () => import("../components/3DTiles/3DTiles_Matrix_root.vue")
+  },
+  {
+    path: "/3DTiles_AdjustHeight",
+    name: "3DTiles_AdjustHeight",
+    component: () => import("../components/3DTiles/3DTiles_AdjustHeight.vue")
+  },
+  {
     path: '/',
     name: '3DTiles_Pick',
     component: () => import("../components/3DTiles/3DTiles_Pick.vue")
@@ -150,6 +170,11 @@ const routes = [
     component: () => import("../components/geojson/geojson_Invert.vue")
   },
   {
+    path: "/billboard_poiIconLabel",
+    name: "billboard_poiIconLabel",
+    component: () => import("../components/billboard/billboard_poiIconLabel.vue")
+  },
+  {
     path: "/entity_CallbackProperty",
     name: "entity_CallbackProperty",
     component: () => import("../components/entity/entity_CallbackProperty.vue")
@@ -163,21 +188,6 @@ const routes = [
     path: "/entity_Billboards",
     name: "entity_Billboards",
     component: () => import("../components/entity/entity_Billboards.vue")
-  },
-  {
-    path: "/3DTiles_Matrix_modelMatrix",
-    name: "3DTiles_Matrix_modelMatrix",
-    component: () => import("../components/3DTiles/3DTiles_Matrix_modelMatrix.vue")
-  },
-  {
-    path: "/3DTiles_Matrix_root",
-    name: "3DTiles_Matrix_root",
-    component: () => import("../components/3DTiles/3DTiles_Matrix_root.vue")
-  },
-  {
-    path: "/3DTiles_AdjustHeight",
-    name: "3DTiles_AdjustHeight",
-    component: () => import("../components/3DTiles/3DTiles_AdjustHeight.vue")
   },
   {
     path: "/gltf_Style",

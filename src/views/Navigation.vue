@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       list: [
-                {
+        {
           id: 1,
           img: "/images/nav/property/property_Point/property_PointCollection_two.jpg",
           text: "点效果集合",
@@ -88,6 +88,30 @@ export default {
           img: "/images/nav/postProcessing/postProcessing_Bloom.jpg",
           text: "后期泛光",
           path: "/postProcessing_Bloom",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3Dtiles_ContentNum.jpg",
+          text: "3DTiles可视范围个数",
+          path: "/3Dtiles_ContentNum",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Matrix_modelMatrix.jpg",
+          text: "3DTiles矩阵modelMatrix",
+          path: "/3DTiles_Matrix_modelMatrix",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_Matrix_root.jpg",
+          text: "3DTiles矩阵root",
+          path: "/3DTiles_Matrix_root",
+        },
+        {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_AdjustHeight.jpg",
+          text: "3DTiles高度调整",
+          path: "/3DTiles_AdjustHeight",
         },
         {
           id: 1,
@@ -193,6 +217,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/billboard/billboard_poiIconLabel.jpg",
+          text: "billboard尾",
+          path: "/billboard_poiIconLabel",
+        },
+        {
+          id: 1,
           img: "/images/nav/entity/entity_CallbackProperty.jpg",
           text: "entity_CallbackProperty",
           path: "/entity_CallbackProperty",
@@ -208,24 +238,6 @@ export default {
           img: "/images/nav/entity/entity_Billboards.jpg",
           text: "entity_Billboards",
           path: "/entity_Billboards",
-        },
-        {
-          id: 1,
-          img: "/images/nav/3DTiles/3DTiles_Matrix_modelMatrix.jpg",
-          text: "3DTiles矩阵modelMatrix",
-          path: "/3DTiles_Matrix_modelMatrix",
-        },
-        {
-          id: 1,
-          img: "/images/nav/3DTiles/3DTiles_Matrix_root.jpg",
-          text: "3DTiles矩阵root",
-          path: "/3DTiles_Matrix_root",
-        },
-        {
-          id: 1,
-          img: "/images/nav/3DTiles/3DTiles_AdjustHeight.jpg",
-          text: "3DTiles高度调整",
-          path: "/3DTiles_AdjustHeight",
         },
         {
           id: 1,
