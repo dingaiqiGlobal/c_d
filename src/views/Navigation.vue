@@ -301,6 +301,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/other/other_ContourLine.jpg",
+          text: "等值线",
+          path: "/other_ContourLine",
+        },
+        {
+          id: 1,
           img: "/images/nav/other/other_FramesPerSecound.jpg",
           text: "帧率-调优",
           path: "/other_FramesPerSecound",

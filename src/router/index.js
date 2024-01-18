@@ -245,6 +245,11 @@ const routes = [
     component: () => import("../components/gltf/gltf_Matrix.vue")
   },
   {
+    path: "/other_ContourLine",
+    name: "other_ContourLine",
+    component: () => import("../components/other/other_ContourLine.vue")
+  },
+  {
     path: "/other_FramesPerSecound",
     name: "other_FramesPerSecound",
     component: () => import("../components/other/other_FramesPerSecound.vue")
