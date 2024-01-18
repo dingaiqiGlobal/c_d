@@ -10,7 +10,9 @@ import "cesium/Widgets/widgets.css";
 import * as Cesium from "cesium/Cesium";
 
 import { CircleWave } from "../../utils/property/property_Point/CircleWaveMaterialProperty";
-
+import { Scanline } from "../../utils/property/property_Point/Scanline";
+import { RadarScanMaterialProperty } from "../../utils/property/property_Point/RadarScanMaterialProperty";
+import { RadarLineMaterialProperty } from "../../utils/property/property_Point/RadarLineMaterialProperty";
 // import {  } from "../../utils/property/property_Point/";
 
 export default {
@@ -36,6 +38,9 @@ export default {
     this.viewer.scene.debugShowFramesPerSecond = true; //显示帧率
 
     this.addPoint_CircleWave();
+    this.addPoint_Scanline();
+    this.addPoint_RadarScan();
+    this.addPoint_RadarLine();
   },
 
   /**
@@ -52,9 +57,49 @@ export default {
    * 116.838, 40.371
    */
   methods: {
+    //波纹圆
     addPoint_CircleWave() {
       let circleWave = new CircleWave(this.viewer, "cirCleWave1");
       circleWave.add([116.826, 40.374, 0], "#1FA8E3", 100, 3000);
+    },
+    //线圈发光
+    addPoint_Scanline() {
+      let scanLine = new Scanline(this.viewer, "scanLine");
+      scanLine.add([116.829, 40.374, 0], "#CE1374", 100, 15);
+    },
+    //雷达半透明扫描
+    addPoint_RadarScan() {
+      let rader = this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.832, 40.374),
+        name: "雷达半透明扫描",
+        ellipse: {
+          semiMajorAxis: 100.0,
+          semiMinorAxis: 100.0,
+          material: new Cesium.RadarScanMaterialProperty({
+            color: new Cesium.Color(0.3, 0.5, 0.3, 0.7),
+            speed: 20.0,
+          }),
+          height: 20.0,
+          heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+          outline: true,
+          outlineColor: new Cesium.Color(1.0, 1.0, 0.0, 1.0),
+        },
+      });
+    },
+    //雷达线
+    addPoint_RadarLine() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.835, 40.374),
+        name: "雷达线",
+        ellipse: {
+          semiMajorAxis: 100.0,
+          semiMinorAxis: 100.0,
+          material: new Cesium.RadarLineMaterialProperty({
+            color: new Cesium.Color(1.0, 1.0, 0.0, 0.7),
+            speed: 20.0,
+          }),
+        },
+      });
     },
   },
 };
