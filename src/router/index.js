@@ -170,6 +170,11 @@ const routes = [
     component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
+    path: "/thirdParty_HeatMap",
+    name: "thirdParty_HeatMap",
+    component: () => import("../components/thirdParty/thirdParty_HeatMap.vue")
+  },
+  {
     path: "/geojson_Cluster_Two",
     name: "geojson_Cluster_Two",
     component: () => import("../components/geojson/geojson_Cluster_Two.vue")

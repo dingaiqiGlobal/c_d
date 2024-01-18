@@ -217,6 +217,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/thirdParty/thirdParty_HeatMap.jpg",
+          text: "热力图",
+          path: "/thirdParty_HeatMap",
+        },
+        {
+          id: 1,
           img: "/images/nav/geojson/geojson_Cluster_Two.jpg",
           text: "geojson聚散",
           path: "/geojson_Cluster_Two",
