@@ -13,6 +13,10 @@ import { CircleWave } from "../../utils/property/property_Point/CircleWaveMateri
 import { Scanline } from "../../utils/property/property_Point/Scanline";
 import { RadarScanMaterialProperty } from "../../utils/property/property_Point/RadarScanMaterialProperty";
 import { RadarLineMaterialProperty } from "../../utils/property/property_Point/RadarLineMaterialProperty";
+import { RadarWaveMaterialProperty } from "../../utils/property/property_Point/RadarWaveMaterialProperty";
+import { RadarSolidScan } from "../../utils/property/property_Point/RadarSolidScan";
+import { EllipsoidElectricMaterialProperty } from "../../utils/property/property_Point/EllipsoidElectricMaterialProperty";
+import { EllipsoidTrailMaterialProperty } from "../../utils/property/property_Point/EllipsoidTrailMaterialProperty";
 // import {  } from "../../utils/property/property_Point/";
 
 export default {
@@ -41,6 +45,11 @@ export default {
     this.addPoint_Scanline();
     this.addPoint_RadarScan();
     this.addPoint_RadarLine();
+    this.addPoint_RadarWave();
+    this.addPoint_ImageMaterialProperty();
+    this.addPoint_RadarSolidScan();
+    this.addPoint_EllipsoidTrail();
+    this.addPoint_EllipsoidElectric();
   },
 
   /**
@@ -97,6 +106,91 @@ export default {
           material: new Cesium.RadarLineMaterialProperty({
             color: new Cesium.Color(1.0, 1.0, 0.0, 0.7),
             speed: 20.0,
+          }),
+        },
+      });
+    },
+    //雷达波纹
+    addPoint_RadarWave() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.838, 40.374),
+        name: "波纹雷达",
+        ellipse: {
+          semiMajorAxis: 100.0,
+          semiMinorAxis: 100.0,
+          material: new Cesium.RadarWaveMaterialProperty({
+            color: new Cesium.Color(1.0, 1.0, 0.0, 0.7),
+            speed: 20.0,
+          }),
+        },
+      });
+    },
+    //雷达图片旋转
+    addPoint_ImageMaterialProperty() {
+      let rader = this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.826, 40.371),
+        name: "图片雷达",
+        ellipse: {
+          semiMajorAxis: 100,
+          semiMinorAxis: 100,
+          material: new Cesium.ImageMaterialProperty({
+            image: "images/icon/radar.png",
+            color: new Cesium.Color(1.0, 1.0, 0.0, 0.7),
+          }),
+          // 不设置高度则无法渲染外框线
+          height: 20.0,
+          heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+          outline: true,
+          outlineColor: new Cesium.Color(1.0, 1.0, 0.0, 1.0),
+        },
+      });
+      this.rotateMaterial(rader.ellipse, 0, -3);
+    },
+    rotateMaterial(instance, _stRotation, _amount) {
+      instance.stRotation = new Cesium.CallbackProperty(function () {
+        _stRotation += _amount;
+        if (_stRotation >= 360 || _stRotation <= -360) {
+          _stRotation = 0;
+        }
+        return Cesium.Math.toRadians(_stRotation);
+      }, false);
+    },
+
+    //固体雷达
+    addPoint_RadarSolidScan() {
+      new RadarSolidScan({
+        viewer: this.viewer,
+        id: "id_1",
+        shortwaveRange: 100.0,
+        position: [116.829, 40.371],
+      });
+    },
+
+    //轨迹球体
+    addPoint_EllipsoidTrail() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.832, 40.371),
+        name: "轨迹球体",
+        ellipsoid: {
+          radii: new Cesium.Cartesian3(100.0, 100.0, 100.0),
+          material: new Cesium.EllipsoidTrailMaterialProperty({
+            color: new Cesium.Color(1.0, 1.0, 0.0, 1.0),
+            speed: 10.0,
+          }),
+        },
+      });
+    },
+
+    //电弧球体
+    addPoint_EllipsoidElectric() {
+      this.viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(116.835, 40.371),
+        name: "电弧球体",
+        ellipsoid: {
+          radii: new Cesium.Cartesian3(100.0, 100.0, 100.0),
+          material: new Cesium.EllipsoidElectricMaterialProperty({
+            color: new Cesium.Color(1.0, 1.0, 0.0, 1.0),
+            speed: 10.0,
           }),
         },
       });
