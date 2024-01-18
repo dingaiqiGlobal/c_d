@@ -65,6 +65,11 @@ const routes = [
     component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
   },
   {
+    path: "/3DTiles_BuildingLight",
+    name: "3DTiles_BuildingLight",
+    component: () => import("../components/3DTiles/3DTiles_BuildingLight.vue")
+  },
+  {
     path: "/3Dtiles_ContentNum",
     name: "3Dtiles_ContentNum",
     component: () => import("../components/3DTiles/3Dtiles_ContentNum.vue")

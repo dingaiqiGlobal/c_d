@@ -89,6 +89,12 @@ export default {
           text: "后期泛光",
           path: "/postProcessing_Bloom",
         },
+                {
+          id: 1,
+          img: "/images/nav/3DTiles/3DTiles_BuildingLight.jpg",
+          text: "3DTiles建筑物光圈",
+          path: "/3DTiles_BuildingLight",
+        },
         {
           id: 1,
           img: "/images/nav/3DTiles/3Dtiles_ContentNum.jpg",
