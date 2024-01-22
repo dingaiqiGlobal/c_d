@@ -217,6 +217,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/thirdParty/thirdParty_mapv.jpg",
+          text: "mapv集合同理",
+          path: "/thirdParty_mapv",
+        },
+        {
+          id: 1,
           img: "/images/nav/thirdParty/thirdParty_HeatMap.jpg",
           text: "热力图",
           path: "/thirdParty_HeatMap",

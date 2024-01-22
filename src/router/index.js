@@ -170,6 +170,11 @@ const routes = [
     component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
+    path: "/thirdParty_mapv",
+    name: "thirdParty_mapv",
+    component: () => import("../components/thirdParty/thirdParty_mapv.vue")
+  },
+  {
     path: "/thirdParty_HeatMap",
     name: "thirdParty_HeatMap",
     component: () => import("../components/thirdParty/thirdParty_HeatMap.vue")
