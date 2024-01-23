@@ -19,6 +19,12 @@ export default {
       list: [
         {
           id: 1,
+          img: "/images/nav/tools/tools_Measure.jpg",
+          text: "测量_长度&面积",
+          path: "/tools_Measure",
+        },
+        {
+          id: 1,
           img: "/images/nav/tools/tools_Angle.jpg",
           text: "测量_角度",
           path: "/tools_Angle",

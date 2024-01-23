@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/tools_Measure",
+    name: "tools_Measure",
+    component: () => import("../components/tools/tools_Measure.vue")
+  },
+  {
     path: "/tools_Angle",
     name: "tools_Angle",
     component: () => import("../components/tools/tools_Angle.vue")
