@@ -19,6 +19,12 @@ export default {
       list: [
         {
           id: 1,
+          img: "/images/nav/tools/tools_Angle.jpg",
+          text: "测量_角度",
+          path: "/tools_Angle",
+        },
+        {
+          id: 1,
           img: "/images/nav/property/property_Point/property_PointCollection_two.jpg",
           text: "点效果集合",
           path: "/property_PointCollection_two",
@@ -29,7 +35,7 @@ export default {
           text: "点效果集合",
           path: "/property_PointCollection_one",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_LineCollection.jpg",
           text: "线效果集合",
@@ -77,7 +83,7 @@ export default {
           text: "模型拆解",
           path: "/project_ModelSplit",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/particleSystem/particleSystem_Fireworks.jpg",
           text: "粒子-烟花",

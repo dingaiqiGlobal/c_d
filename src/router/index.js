@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/tools_Angle",
+    name: "tools_Angle",
+    component: () => import("../components/tools/tools_Angle.vue")
+  },
+  {
     path: "/property_PointCollection_two",
     name: "property_PointCollection_two",
     component: () => import("../components/property/property_Point/property_PointCollection_two.vue")
