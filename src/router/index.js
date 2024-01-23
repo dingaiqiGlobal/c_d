@@ -15,6 +15,11 @@ const routes = [
     component: () => import("../components/property/property_Point/property_PointCollection_one.vue")
   },
   {
+    path: "/property_LineCollection",
+    name: "property_LineCollection",
+    component: () => import("../components/property/property_Polyline/property_LineCollection.vue")
+  },
+  {
     path: "/property_ParabolaLine",
     name: "property_ParabolaLine",
     component: () => import("../components/property/property_Polyline/property_ParabolaLine.vue")

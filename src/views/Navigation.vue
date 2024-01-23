@@ -29,6 +29,12 @@ export default {
           text: "点效果集合",
           path: "/property_PointCollection_one",
         },
+                {
+          id: 1,
+          img: "/images/nav/property/property_Polyline/property_LineCollection.jpg",
+          text: "线效果集合",
+          path: "/property_LineCollection",
+        },
         {
           id: 1,
           img: "/images/nav/property/property_Polyline/property_ParabolaLine.jpg",
