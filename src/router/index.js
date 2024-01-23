@@ -55,6 +55,11 @@ const routes = [
     component: () => import("../components/project/project_ModelSplit.vue")
   },
   {
+    path: "/particleSystem_Fireworks",
+    name: "particleSystem_Fireworks",
+    component: () => import("../components/particleSystem/particleSystem_Fireworks.vue")
+  },
+  {
     path: "/particleSystem_Collection",
     name: "particleSystem_Collection",
     component: () => import("../components/particleSystem/particleSystem_Collection.vue")

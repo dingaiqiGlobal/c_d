@@ -77,6 +77,12 @@ export default {
           text: "模型拆解",
           path: "/project_ModelSplit",
         },
+                {
+          id: 1,
+          img: "/images/nav/particleSystem/particleSystem_Fireworks.jpg",
+          text: "粒子-烟花",
+          path: "/particleSystem_Fireworks",
+        },
         {
           id: 1,
           img: "/images/nav/particleSystem/particleSystem_Collection.jpg",
