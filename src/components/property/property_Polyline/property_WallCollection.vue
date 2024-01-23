@@ -41,6 +41,7 @@ export default {
     this.addWall_Diffuse();
     this.addWall_Zoom();
     this.addWall_Turf();
+    this.addWall_ImageMaterialProperty();
   },
 
   methods: {
@@ -195,6 +196,55 @@ export default {
           material: _material,
         },
       });
+    },
+
+    addWall_ImageMaterialProperty() {
+      fetch("data/json/line/line_6.json")
+        .then((res) => res.json())
+        .then((data) => {
+          /**
+           *entity方式加载
+           */
+          let WallPositions = [];
+          for (let i = 0; i < data.features[0].geometry.coordinates.length; i++) {
+            let positionsArr = data.features[0].geometry.coordinates[i];
+            for (let j = 0; j < positionsArr.length; j++) {
+              WallPositions.push(positionsArr[j]);
+            }
+          }
+          this.viewer.entities.add({
+            name: "颜色渐变",
+            wall: {
+              positions: Cesium.Cartesian3.fromDegreesArray(WallPositions),
+              maximumHeights: new Array(WallPositions.length / 2).fill(50),
+              minimunHeights: new Array(WallPositions.length / 2).fill(0),
+              material: new Cesium.ImageMaterialProperty({
+                image: this.getColorRamp([0.0, 0.045, 0.1, 0.15, 0.37, 0.54, 1.0], true),
+                transparent: true,
+              }),
+            },
+          });
+        });
+    },
+    getColorRamp(elevationRamp) {
+      var ramp = document.createElement("canvas");
+      ramp.width = 1;
+      ramp.height = 20;
+      var ctx = ramp.getContext("2d");
+      var values = elevationRamp;
+      var grd = ctx.createLinearGradient(0, 0, 0, 20);
+      grd.addColorStop(values[0], "#000000"); //black
+      grd.addColorStop(values[1], "#2747E0"); //blue
+      grd.addColorStop(values[2], "#D33B7D"); //pink
+      grd.addColorStop(values[3], "#D33038"); //red
+      grd.addColorStop(values[4], "#FF9742"); //orange
+      //grd.addColorStop(values[5], '#ffd700'); //yellow
+      grd.addColorStop(values[5], "transparent"); //透明度设置
+      grd.addColorStop(values[6], "#ffffff"); //white
+
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, 1, 20);
+      return ramp;
     },
   },
 };
