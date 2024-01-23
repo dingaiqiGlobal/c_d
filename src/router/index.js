@@ -230,6 +230,11 @@ const routes = [
     component: () => import("../components/entity/entity_CallbackProperty.vue")
   },
   {
+    path: "/entity_PolylineVolume",
+    name: "entity_PolylineVolume",
+    component: () => import("../components/entity/entity_PolylineVolume.vue")
+  },
+  {
     path: "/entity_Type_Collection",
     name: "entity_Type_Collection",
     component: () => import("../components/entity/entity_Type_Collection.vue")

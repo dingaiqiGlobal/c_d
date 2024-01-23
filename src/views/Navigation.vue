@@ -289,6 +289,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/entity/entity_PolylineVolume.jpg",
+          text: "空心管、多边形",
+          path: "/entity_PolylineVolume",
+        },
+        {
+          id: 1,
           img: "/images/nav/entity/entity_Type_Collection.jpg",
           text: "entity类型集合",
           path: "/entity_Type_Collection",
