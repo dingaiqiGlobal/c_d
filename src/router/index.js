@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/interaction_Seclet",
+    name: "interaction_Seclet",
+    component: () => import("../components/interaction/interaction_Seclet.vue")
+  },
+  {
     path: "/tools_Measure",
     name: "tools_Measure",
     component: () => import("../components/tools/tools_Measure.vue")

@@ -19,6 +19,12 @@ export default {
       list: [
         {
           id: 1,
+          img: "/images/nav/interaction/interaction_Seclet.jpg",
+          text: "实体选择",
+          path: "/interaction_Seclet",
+        },
+        {
+          id: 1,
           img: "/images/nav/tools/tools_Measure.jpg",
           text: "测量_长度&面积",
           path: "/tools_Measure",
