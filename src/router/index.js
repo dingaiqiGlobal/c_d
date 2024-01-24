@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: "/interaction_Stroke",
+    name: "interaction_Stroke",
+    component: () => import("../components/interaction/interaction_Stroke.vue")
+  },
+  {
     path: "/interaction_Seclet",
     name: "interaction_Seclet",
     component: () => import("../components/interaction/interaction_Seclet.vue")
