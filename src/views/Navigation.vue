@@ -223,11 +223,16 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/clock/clock_Class.jpg",
+          text: "clock类封装",
+          path: "/clock_Class",
+        },
+        {
+          id: 1,
           img: "/images/nav/clock/clock_Keyboard_Roaming.jpg",
           text: "键盘漫游",
           path: "/clock_Keyboard_Roaming",
         },
-
         {
           id: 1,
           img: "/images/nav/clock/clock_TrackPlay_FirstView.jpg",

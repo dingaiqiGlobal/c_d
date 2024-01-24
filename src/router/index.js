@@ -175,6 +175,11 @@ const routes = [
     component: () => import("../components/camera/camera_GlobeRotate.vue")
   },
   {
+    path: "/clock_Class",
+    name: "clock_Class",
+    component: () => import("../components/clock/clock_Class.vue")
+  },
+  {
     path: "/clock_Keyboard_Roaming",
     name: "clock_Keyboard_Roaming",
     component: () => import("../components/clock/clock_Keyboard_Roaming.vue")
