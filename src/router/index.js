@@ -175,6 +175,11 @@ const routes = [
     component: () => import("../components/clock/clock_TrackPlay_FirstView.vue")
   },
   {
+    path: "/clock_TrackPlay_Globe",
+    name: "clock_TrackPlay_Globe",
+    component: () => import("../components/clock/clock_TrackPlay_Globe.vue")
+  },
+  {
     path: "/OGC_Terrain",
     name: "OGC_Terrain",
     component: () => import("../components/OGC/OGC_Terrain.vue")
@@ -218,6 +223,11 @@ const routes = [
     path: "/geojson_Invert",
     name: "geojson_Invert",
     component: () => import("../components/geojson/geojson_Invert.vue")
+  },
+  {
+    path: "/billboard_gif",
+    name: "billboard_gif",
+    component: () => import("../components/billboard/billboard_gif.vue")
   },
   {
     path: "/billboard_poiIconLabel",

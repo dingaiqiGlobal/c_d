@@ -215,11 +215,18 @@ export default {
           text: "键盘漫游",
           path: "/clock_Keyboard_Roaming",
         },
+
         {
           id: 1,
           img: "/images/nav/clock/clock_TrackPlay_FirstView.jpg",
           text: "轨迹回放（漫游）",
           path: "/clock_TrackPlay_FirstView",
+        },
+        {
+          id: 1,
+          img: "/images/nav/clock/clock_TrackPlay_Globe.jpg",
+          text: "轨迹回放(全局)",
+          path: "/clock_TrackPlay_Globe",
         },
         {
           id: 1,
@@ -274,6 +281,12 @@ export default {
           img: "/images/nav/geojson/geojson_Invert.jpg",
           text: "geojson反选",
           path: "/geojson_Invert",
+        },
+        {
+          id: 1,
+          img: "/images/nav/billboard/billboard_gif.jpg",
+          text: "billboard_gif",
+          path: "/billboard_gif",
         },
         {
           id: 1,
