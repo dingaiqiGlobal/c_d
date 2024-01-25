@@ -15,6 +15,7 @@
     "cesium": "^1.95.0",
     "core-js": "^3.8.3",
     "dat.gui": "^0.7.9",
+    "echarts": "^4.8.0",
     "element-ui": "^2.15.14",
     "https-browserify": "^1.0.0",
     "libgif": "^0.0.3",

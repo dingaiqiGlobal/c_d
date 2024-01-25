@@ -265,6 +265,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/thirdParty/thirdParty_Echarts_Fly.jpg",
+          text: "echarts飞行",
+          path: "/thirdParty_Echarts_Fly",
+        },
+        {
+          id: 1,
           img: "/images/nav/thirdParty/thirdParty_mapv.jpg",
           text: "mapv集合同理",
           path: "/thirdParty_mapv",

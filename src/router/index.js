@@ -210,6 +210,11 @@ const routes = [
     component: () => import("../components/OGC/OGC_Type.vue")
   },
   {
+    path: "/thirdParty_Echarts_Fly",
+    name: "thirdParty_Echarts_Fly",
+    component: () => import("../components/thirdParty/thirdParty_Echarts_Fly.vue")
+  },
+  {
     path: "/thirdParty_mapv",
     name: "thirdParty_mapv",
     component: () => import("../components/thirdParty/thirdParty_mapv.vue")
