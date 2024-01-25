@@ -325,6 +325,11 @@ const routes = [
     component: () => import("../components/other/other_ViewportQuad_Logo.vue")
   },
   {
+    path: "/control_Navigation",
+    name: "control_Navigation",
+    component: () => import("../components/control/control_Navigation.vue")
+  },
+  {
     path: "/control_HawkEye3DMap",
     name: "control_HawkEye3DMap",
     component: () => import("../components/control/control_HawkEye3DMap.vue")

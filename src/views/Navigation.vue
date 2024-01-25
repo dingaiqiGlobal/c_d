@@ -397,6 +397,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/control/control_Navigation.jpg",
+          text: "控件导航",
+          path: "/control_Navigation",
+        },
+        {
+          id: 1,
           img: "/images/nav/control/control_HawkEye3DMap.jpg",
           text: "鹰眼图",
           path: "/control_HawkEye3DMap",

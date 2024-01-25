@@ -13,6 +13,7 @@
     "axios": "^1.6.5",
     "browserify-zlib": "^0.2.0",
     "cesium": "^1.95.0",
+    "cesium-navigation-es6": "^3.0.8",
     "core-js": "^3.8.3",
     "dat.gui": "^0.7.9",
     "echarts": "^4.8.0",
