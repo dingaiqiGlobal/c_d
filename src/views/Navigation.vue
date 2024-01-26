@@ -397,14 +397,20 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/control/control_2DLink3D.jpg",
+          text: "控件-联动",
+          path: "/control_2DLink3D",
+        },
+        {
+          id: 1,
           img: "/images/nav/control/control_Navigation.jpg",
-          text: "控件导航",
+          text: "控件-导航",
           path: "/control_Navigation",
         },
         {
           id: 1,
           img: "/images/nav/control/control_HawkEye3DMap.jpg",
-          text: "鹰眼图",
+          text: "控件-鹰眼图",
           path: "/control_HawkEye3DMap",
         },
         {

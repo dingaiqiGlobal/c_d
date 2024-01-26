@@ -5,9 +5,14 @@
 ## Project setup
 ```
 npm install
+注意事项1
 重装cesium
 npm unstall cesium
 npm stall cesium@1.95.0 --save
+
+注意事项2
+导航控件改node_modules依赖
+
 ```
 
 ### Compiles and hot-reloads for development

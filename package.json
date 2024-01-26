@@ -21,6 +21,7 @@
     "https-browserify": "^1.0.0",
     "libgif": "^0.0.3",
     "mapv": "^2.0.62",
+    "ol": "^7.4.0",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "url": "^0.11.3",
