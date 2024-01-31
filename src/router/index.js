@@ -255,6 +255,11 @@ const routes = [
     component: () => import("../components/billboard/billboard_poiIconLabel.vue")
   },
   {
+    path: "/primitives_ModelAnimation",
+    name: "primitives_ModelAnimation",
+    component: () => import("../components/primitives/primitives_ModelAnimation.vue")
+  },
+  {
     path: "/entity_CallbackProperty",
     name: "entity_CallbackProperty",
     component: () => import("../components/entity/entity_CallbackProperty.vue")

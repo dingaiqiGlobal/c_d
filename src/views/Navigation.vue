@@ -319,6 +319,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/primitives/primitives_ModelAnimation.jpg",
+          text: "primitives_ModelAnimation",
+          path: "/primitives_ModelAnimation",
+        },
+        {
+          id: 1,
           img: "/images/nav/entity/entity_CallbackProperty.jpg",
           text: "entity_CallbackProperty",
           path: "/entity_CallbackProperty",
