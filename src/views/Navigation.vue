@@ -133,6 +133,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/3DTiles/3DTiles_CustomShader.jpg",
+          text: "3DTiles自定义shader",
+          path: "/3DTiles_CustomShader",
+        },
+        {
+          id: 1,
           img: "/images/nav/3DTiles/3DTiles_BuildingLight.jpg",
           text: "3DTiles建筑物光圈",
           path: "/3DTiles_BuildingLight",

@@ -100,6 +100,11 @@ const routes = [
     component: () => import("../components/postProcessing/postProcessing_Bloom.vue")
   },
   {
+    path: "/3DTiles_CustomShader",
+    name: "3DTiles_CustomShader",
+    component: () => import("../components/3DTiles/3DTiles_CustomShader.vue")
+  },
+  {
     path: "/3DTiles_BuildingLight",
     name: "3DTiles_BuildingLight",
     component: () => import("../components/3DTiles/3DTiles_BuildingLight.vue")
