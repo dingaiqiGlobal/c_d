@@ -175,6 +175,11 @@ const routes = [
     component: () => import("../components/3DTiles/3DTiles_Monomer.vue")
   },
   {
+    path: "/camera_ChangeEvent",
+    name: "camera_ChangeEvent",
+    component: () => import("../components/camera/camera_ChangeEvent.vue")
+  },
+  {
     path: "/camera_GlobeRotate",
     name: "camera_GlobeRotate",
     component: () => import("../components/camera/camera_GlobeRotate.vue")

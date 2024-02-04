@@ -223,6 +223,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/camera/camera_ChangeEvent.jpg",
+          text: "相机事件(监听地图缩放)",
+          path: "/camera_ChangeEvent",
+        },
+        {
+          id: 1,
           img: "/images/nav/camera/camera_GlobeRotate.jpg",
           text: "旋转地球",
           path: "/camera_GlobeRotate",
