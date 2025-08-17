@@ -1,0 +1,10 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.8242739000001,40.37351796000007]},"properties":{"OBJECTID":82,"NAME":"果园新里","KIND":"808B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.82978190000006,40.358255040000074]},"properties":{"OBJECTID":92,"NAME":"太扬家园","KIND":"808B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.83684190000008,40.36814100000004]},"properties":{"OBJECTID":273,"NAME":"檀州家园","KIND":"808F"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.84957110000005,40.37511600000005]},"properties":{"OBJECTID":287,"NAME":"花园小区","KIND":"808F"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.84957510000004,40.37511501000006]},"properties":{"OBJECTID":394,"NAME":"花园小区","KIND":"808B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.83684010000002,40.368135960000075]},"properties":{"OBJECTID":424,"NAME":"檀州家园","KIND":"808B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.82978190000006,40.358251980000034]},"properties":{"OBJECTID":562,"NAME":"太扬家园","KIND":"808F"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.8242739000001,40.37351301000007]},"properties":{"OBJECTID":617,"NAME":"果园新里","KIND":"808F"}}
+]}
