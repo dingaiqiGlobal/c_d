@@ -25,6 +25,12 @@ export default {
         },
         {
           id: 1,
+          img: "/images/nav/package/package_viewer.jpg",
+          text: "封装包",
+          path: "/package_viewer",
+        },
+        {
+          id: 1,
           img: "/images/nav/interaction/interaction_Seclet.jpg",
           text: "实体选择",
           path: "/interaction_Seclet",
@@ -569,7 +575,7 @@ export default {
 
   computed: {},
 
-  mounted() {},
+  mounted() { },
 
   methods: {
     //鼠标滚轮上下滑动时div左右滑动
@@ -600,11 +606,9 @@ export default {
     border: 1px solid #759dc0;
     padding: 2px 4px 4px 4px;
     background-color: #bcd8f4;
-    background-image: linear-gradient(
-      #ffffff 0px,
-      rgba(255, 255, 255, 0) 3px,
-      rgba(255, 255, 255, 0.75) 100%
-    );
+    background-image: linear-gradient(#ffffff 0px,
+        rgba(255, 255, 255, 0) 3px,
+        rgba(255, 255, 255, 0.75) 100%);
     box-sizing: content-box;
     border-radius: 4px;
     cursor: pointer;
