@@ -6,7 +6,7 @@
     "serverType": "XYZ",
     "serverUrl": "http://online{s}.map.bdimg.com/onlinelabel/?qt=tile&x={x}&y={y}&z={z}&styles=pl&scaler=1&p=1",
     "coordinates": "BD09",
-    "lonLat": "116.38916,39.92159",
+    "lonLat": "116.38916,39.92159,1000000",
     "show": "true",
     "alpha": "1"
   },
@@ -17,7 +17,7 @@
     "serverType": "XYZ",
     "serverUrl": "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
     "coordinates": "GCJ02",
-    "lonLat": "116.38916,39.92159",
+    "lonLat": "111.862790,40.797180,1000000",
     "show": "true",
     "alpha": "1"
   },
@@ -25,7 +25,12 @@
     "id": "3",
     "mapName": "XYZ",
     "thumbnail": "/images/icon/mapControIcon/xyz.png",
-    "serverType": "XYZ"
+    "serverType": "XYZ",
+    "serverUrl": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "coordinates": "CGCS2000",
+    "lonLat": "116.38916,39.92159,1000000",
+    "show": "true",
+    "alpha": "1"
   },
   {
     "id": "4",
@@ -34,7 +39,7 @@
     "serverType": "WMTS",
     "serverUrl": "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=6eeb1c01782471ad6dcdd0551ff99894",
     "coordinates": "CGCS2000",
-    "lonLat": "116.38916,39.92159",
+    "lonLat": "116.38916,39.92159,1000000",
     "show": "true",
     "alpha": "1"
   },
@@ -43,9 +48,9 @@
     "mapName": "天地图Vec",
     "thumbnail": "/images/icon/mapControIcon/tdtVec.png",
     "serverType": "WMTS",
-    "serverUrl": "http://t0.tianditu.com/vec_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cia&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=6eeb1c01782471ad6dcdd0551ff99894",
+    "serverUrl": "http://t0.tianditu.com/vec_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=vec&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=6eeb1c01782471ad6dcdd0551ff99894",
     "coordinates": "CGCS2000",
-    "lonLat": "116.38916,39.92159",
+    "lonLat": "116.38916,39.92159,1000000",
     "show": "true",
     "alpha": "1"
   },
@@ -53,6 +58,11 @@
     "id": "6",
     "mapName": "WMTS",
     "thumbnail": "/images/icon/mapControIcon/wmts.png",
-    "serverType": "WMTS"
+    "serverType": "WMTS",
+    "serverUrl": "https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer",
+    "coordinates": "CGCS2000",
+    "lonLat": "116.38916,39.92159,1000000",
+    "show": "true",
+    "alpha": "1"
   }
 ]

@@ -20,6 +20,7 @@
 
 <script>
 import axios from 'axios';//正式环境API
+import BaseMap from '@/components/package/js/layer/BaseMap.js'
 export default {
     name: "MapControl",
     components: {},
@@ -109,7 +110,7 @@ export default {
             }
         },
         getBaseMapList() {
-            //正式环境API
+            //正式环境API(针对不同wmts，请求参数可在数据中设置传)
             axios.get('/data/package/baseMap.json')
                 .then(response => {
                     this.mapItems = response.data;
@@ -129,12 +130,73 @@ export default {
             }
         },
         changeMap(item) {
-            console.log(item)
+            this.removeAllBaseMap();//清除之前的底图
+            let basemap = new BaseMap(item);
+            //layer、center是baseMap的私有属性
+            let basemapLayer = basemap.layer;
+            let basemapCenter = basemap.center;
+            //添加到ImageryLayerCollection并将置于底部
+            let imageryLayers = this.viewer.imageryLayers;
+            if (item.serverType == "WMTS" && item.coordinates == 'CGCS2000') {
+                basemapLayer[0].id = item.id;//底图图层
+                if (basemapLayer.length > 1) {
+                    basemapLayer[1].id = item.id + '_1';//注记图层
+                }
+                for (let item of basemapLayer) {
+                    item.type = 'BaseMap';
+                    this.viewer.imageryLayers.add(item);
+                }
+                //设置底图层级为最底层
+                var tdtLayer = this.getTargetImageryLayer(item.id);
+                var tdtLabelLayer = this.getTargetImageryLayer(item.id + '_1');
+                if (tdtLabelLayer) {
+                    imageryLayers.lowerToBottom(tdtLabelLayer);
+                }
+                if (tdtLayer) {
+                    imageryLayers.lowerToBottom(tdtLayer);
+                }
+            } else {
+                basemapLayer.id = item.id;//底图图层
+                basemapLayer.type = 'BaseMap';
+                imageryLayers.add(basemapLayer);
+                let targetImageryLayer = this.getTargetImageryLayer(item.id);
+                if (targetImageryLayer) {
+                    imageryLayers.lowerToBottom(targetImageryLayer);
+                }
+            }
+            //定位
+            if (basemapCenter) {
+                this.viewer.camera.flyTo(basemapCenter);
+            } else {
+                this.viewer.camera.flyTo(this.viewerCenter);//初始化已经挂着到window
+            }
         },
         removeAllBaseMap() {
             //不能用removeAll方法，会删除wms服务
             //地图要加标记BaseMap
-
+            let basemapArr = [];
+            let imageryLayers = this.viewer.imageryLayers;
+            for (let i = 0; i < imageryLayers.length; i++) {
+                let imageryLayer = imageryLayers.get(i);
+                if (imageryLayer.type && imageryLayer.type == 'BaseMap') {
+                    basemapArr.push(imageryLayer);
+                }
+            }
+            for (let i = 0; i < basemapArr.length; i++) {
+                let basemap = basemapArr[i];
+                imageryLayers.remove(basemap);
+            }
+        },
+        getTargetImageryLayer(id) {
+            let targetImageryLayer = null;
+            let imageryLayers = this.viewer.imageryLayers;
+            for (let i = 0; i < imageryLayers.length; i++) {
+                var imageryLayer = imageryLayers.get(i);
+                if (imageryLayer.id && imageryLayer.id === id) {
+                    targetImageryLayer = imageryLayer;
+                }
+            }
+            return targetImageryLayer;
         },
     },
     //卸载事件

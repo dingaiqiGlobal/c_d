@@ -21,25 +21,23 @@ let ViewInit = {
       selectionIndicator: true, // Disable selection indicator
       shouldAnimate: true,
       // requestRenderMode: true
+      // imageryProvider: new Cesium.SingleTileImageryProvider({
+      //   url: require("@/assets/mapControIcon/world_b.jpg"),
+      //   rectangle: Cesium.Rectangle.fromDegrees(-180.0, -90.0, 180.0, 90.0),
+      // }),
     });
     viewer._cesiumWidget._creditContainer.style.display = "none";
     viewer.animation.container.style.visibility = "hidden"; // 不显示动画控件
     viewer.timeline.container.style.visibility = "hidden"; // 不显示时间控件
+    viewer.imageryLayers.removeAll();
 
-    // 隐藏地球
-    // viewer.scene.skyBox.show = false;
-    // viewer.scene.backgroundColor = Cesium.Color.WHITE;
-    // viewer.scene.sun.show = false;
-    // viewer.scene.moon.show = false;
-    // viewer.scene.globe.show = false;
-    // viewer.scene.skyAtmosphere.show = false;
     this.viewer = viewer; //赋值对象viewer
     this.setCenter({});
   },
   setCenter(options) {
     let lon = options.lon || 116.39156;
     let lat = options.lat || 39.9071;
-    let alt = options.alt || 100000;
+    let alt = options.alt || 1000000;
     let heading = options.heading || 0;
     let pitch = options.pitch || -90;
     let roll = options.roll || 0;
