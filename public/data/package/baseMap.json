@@ -2,31 +2,57 @@
   {
     "id": "1",
     "mapName": "百度",
-    "thumbnail": "/images/icon/mapControIcon/baidu.png"
+    "thumbnail": "/images/icon/mapControIcon/baidu.png",
+    "serverType": "XYZ",
+    "serverUrl": "http://online{s}.map.bdimg.com/onlinelabel/?qt=tile&x={x}&y={y}&z={z}&styles=pl&scaler=1&p=1",
+    "coordinates": "BD09",
+    "lonLat": "116.38916,39.92159",
+    "show": "true",
+    "alpha": "1"
   },
   {
     "id": "2",
     "mapName": "高德",
-    "thumbnail": "/images/icon/mapControIcon/gaode.png"
+    "thumbnail": "/images/icon/mapControIcon/gaode.png",
+    "serverType": "XYZ",
+    "serverUrl": "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
+    "coordinates": "GCJ02",
+    "lonLat": "116.38916,39.92159",
+    "show": "true",
+    "alpha": "1"
   },
   {
     "id": "3",
-    "mapName": "天地图Img",
-    "thumbnail": "/images/icon/mapControIcon/tdt.png"
+    "mapName": "XYZ",
+    "thumbnail": "/images/icon/mapControIcon/xyz.png",
+    "serverType": "XYZ"
   },
   {
     "id": "4",
-    "mapName": "天地图Cva",
-    "thumbnail": "/images/icon/mapControIcon/tdtCva.png"
+    "mapName": "天地图Img",
+    "thumbnail": "/images/icon/mapControIcon/tdt.png",
+    "serverType": "WMTS",
+    "serverUrl": "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=6eeb1c01782471ad6dcdd0551ff99894",
+    "coordinates": "CGCS2000",
+    "lonLat": "116.38916,39.92159",
+    "show": "true",
+    "alpha": "1"
   },
   {
     "id": "5",
-    "mapName": "XYZ",
-    "thumbnail": "/images/icon/mapControIcon/xyz.png"
+    "mapName": "天地图Vec",
+    "thumbnail": "/images/icon/mapControIcon/tdtVec.png",
+    "serverType": "WMTS",
+    "serverUrl": "http://t0.tianditu.com/vec_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cia&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=6eeb1c01782471ad6dcdd0551ff99894",
+    "coordinates": "CGCS2000",
+    "lonLat": "116.38916,39.92159",
+    "show": "true",
+    "alpha": "1"
   },
   {
     "id": "6",
     "mapName": "WMTS",
-    "thumbnail": "/images/icon/mapControIcon/bing.png"
+    "thumbnail": "/images/icon/mapControIcon/wmts.png",
+    "serverType": "WMTS"
   }
 ]
