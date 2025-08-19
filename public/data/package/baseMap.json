@@ -6,37 +6,27 @@
   },
   {
     "id": "2",
-    "mapName": "bing",
-    "thumbnail": "/images/icon/mapControIcon/bing.png"
-  },
-  {
-    "id": "3",
-    "mapName": "cesium",
-    "thumbnail": "/images/icon/mapControIcon/cesium.png"
-  },
-  {
-    "id": "4",
     "mapName": "高德",
     "thumbnail": "/images/icon/mapControIcon/gaode.png"
   },
   {
-    "id": "5",
-    "mapName": "mapbox",
-    "thumbnail": "/images/icon/mapControIcon/mapbox.png"
-  },
-  {
-    "id": "6",
+    "id": "3",
     "mapName": "天地图Img",
     "thumbnail": "/images/icon/mapControIcon/tdt.png"
   },
   {
-    "id": "7",
+    "id": "4",
     "mapName": "天地图Cva",
     "thumbnail": "/images/icon/mapControIcon/tdtCva.png"
   },
   {
-    "id": "8",
+    "id": "5",
     "mapName": "XYZ",
     "thumbnail": "/images/icon/mapControIcon/xyz.png"
+  },
+  {
+    "id": "6",
+    "mapName": "WMTS",
+    "thumbnail": "/images/icon/mapControIcon/bing.png"
   }
 ]
