@@ -9,6 +9,11 @@ const routes = [
     name: "interaction_Stroke",
     component: () => import("../components/interaction/interaction_Stroke.vue"),
   },
+    {
+    path: "/airSpaceGrid",
+    name: "airSpaceGrid",
+    component: () => import("../components/airSpaceGrid/airSpaceGrid.vue"),
+  },
   {
     path: "/package_viewer",
     name: "package_viewer",
