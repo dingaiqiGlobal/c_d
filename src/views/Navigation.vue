@@ -17,6 +17,12 @@ export default {
   data() {
     return {
       list: [
+               {
+          id: 1,
+          img: "/images/nav/tools/tools_DrawEdit.jpg",
+          text: "绘制编辑",
+          path: "/tools_DrawEdit",
+        },
         {
           id: 1,
           img: "/images/nav/interaction/interaction_Stroke.jpg",
@@ -26,7 +32,7 @@ export default {
         {
           id: 1,
           img: "/images/nav/package/package_viewer.jpg",
-          text: "封装包",
+          text: "diy控制面板",
           path: "/package_viewer",
         },
         {

@@ -19,6 +19,11 @@ const routes = [
     name: "interaction_Seclet",
     component: () => import("../components/interaction/interaction_Seclet.vue"),
   },
+    {
+    path: "/tools_DrawEdit",
+    name: "tools_DrawEdit",
+    component: () => import("../components/tools/tools_DrawEdit.vue"),
+  },
   {
     path: "/tools_Measure",
     name: "tools_Measure",
