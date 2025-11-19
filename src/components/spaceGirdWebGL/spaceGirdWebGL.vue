@@ -42,6 +42,7 @@ export default {
     this.viewer.animation.container.style.visibility = "hidden"; // 不显示动画控件
     this.viewer.timeline.container.style.visibility = "hidden"; // 不显示时间控件
     this.viewer.scene.globe.depthTestAgainstTerrain = false; // 关闭地形深度测试，地形将不再遮挡任何对象
+    this.viewer.scene.debugShowFramesPerSecond = true;//显示帧率
 
     // 隐藏地球
     // this.viewer.scene.skyBox.show = false;
@@ -59,10 +60,36 @@ export default {
 
   methods: {
     addGrid() {
-      let origin = Cesium.Cartesian3.fromDegrees(114.25653, 22.59111, 0);
-      let modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(origin);
-      let primitive = new GridPrimitive(modelMatrix);
+      // 创建实例数组
+      var instances = [];
+      for (let i = 0; i < 100; i++) {
+        for (let j = 0; j < 100; j++) {
+          var origin = Cesium.Cartesian3.fromDegrees(
+            114.24543 + 0.0002 * i,
+            22.58111 + 0.0002 * j,
+            0
+          );
+          var modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(origin);
+          instances.push({
+            id: "instance_" + i + "_" + j,
+            color: Cesium.Color.fromRandom({ alpha: 1.0 }),
+            matrix: modelMatrix,
+          });
+        }
+      }
+
+      // 创建并添加primitive
+      let primitive = new GridPrimitive(null, instances);
       this.viewer.scene.primitives.add(primitive);
+
+      // 添加拾取事件
+      this.viewer.screenSpaceEventHandler.setInputAction((event) => {
+        const picked = this.viewer.scene.pick(event.position);
+        console.log(picked,"111")
+        if (Cesium.defined(picked) && picked.primitive === primitive) {
+          console.log("拾取到实例:", picked.id);
+        }
+      }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
     },
   },
 };
