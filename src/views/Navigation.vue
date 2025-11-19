@@ -17,7 +17,13 @@ export default {
   data() {
     return {
       list: [
-               {
+        {
+          id: 1,
+          img: "/images/nav/spaceGirdWebGL/spaceGirdWebGL.jpg",
+          text: "空域网格webgl",
+          path: "/spaceGirdWebGL",
+        },
+        {
           id: 1,
           img: "/images/nav/tools/tools_DrawEdit.jpg",
           text: "绘制编辑",
@@ -29,7 +35,7 @@ export default {
           text: "实体描边",
           path: "/interaction_Stroke",
         },
-                {
+        {
           id: 1,
           img: "/images/nav/package/package_viewer.jpg",
           text: "低空网格",
@@ -587,7 +593,7 @@ export default {
 
   computed: {},
 
-  mounted() { },
+  mounted() {},
 
   methods: {
     //鼠标滚轮上下滑动时div左右滑动
@@ -618,9 +624,11 @@ export default {
     border: 1px solid #759dc0;
     padding: 2px 4px 4px 4px;
     background-color: #bcd8f4;
-    background-image: linear-gradient(#ffffff 0px,
-        rgba(255, 255, 255, 0) 3px,
-        rgba(255, 255, 255, 0.75) 100%);
+    background-image: linear-gradient(
+      #ffffff 0px,
+      rgba(255, 255, 255, 0) 3px,
+      rgba(255, 255, 255, 0.75) 100%
+    );
     box-sizing: content-box;
     border-radius: 4px;
     cursor: pointer;

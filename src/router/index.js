@@ -5,9 +5,14 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/interaction_Stroke",
-    name: "interaction_Stroke",
-    component: () => import("../components/interaction/interaction_Stroke.vue"),
+    path: "/spaceGirdWebGL",
+    name: "spaceGirdWebGL",
+    component: () => import("../components/spaceGirdWebGL/spaceGirdWebGL.vue"),
+  },
+      {
+    path: "/airSpaceGrid",
+    name: "airSpaceGrid",
+    component: () => import("../components/airSpaceGrid/airSpaceGrid.vue"),
   },
     {
     path: "/airSpaceGrid",
