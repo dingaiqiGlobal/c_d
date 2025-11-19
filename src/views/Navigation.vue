@@ -29,6 +29,12 @@ export default {
           text: "实体描边",
           path: "/interaction_Stroke",
         },
+                {
+          id: 1,
+          img: "/images/nav/package/package_viewer.jpg",
+          text: "低空网格",
+          path: "/airSpaceGrid",
+        },
         {
           id: 1,
           img: "/images/nav/package/package_viewer.jpg",
